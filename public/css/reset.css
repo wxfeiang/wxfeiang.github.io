@@ -1,16 +1,52 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document  aouthor: 王鹏*/
 
 /*重置样式*/
-body{margin:0;font-family: "Microsoft Yahei";font-size:12px;}
-p,dl,dd{margin:0;}ul,ol{margin:0;padding:0;list-style:none;}
-h1,h2,h3,h4,h5,h6{margin:0;font-weight:normal;font-size:12px;}
-strong,b{font-weight:normal;}em,i{font-style:normal;}
-img{ border:none;vertical-align:middle;}
-a{text-decoration:none;color:#000;}
-table{border-spacing:0; border-collapse:collapse;}th,td{height:100px;text-align:left; vertical-align:top;}
-input，{outline:none;margin:0;padding:0;background:none;border:none; font-size:12px; font-family:"Microsoft Yahei";}
-textarea{ overflow:auto; resize:none;}
+body{
+	margin:0;
+	font-family: "MicrosoftYaHei";
+	font-size:12px;
+   }
+p,dl,dd{margin:0;}
+ul,ol{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4,h5,h6{margin:0;
+	font-weight:normal;
+	font-size:12px;
+  }
+strong,b{
+	font-weight:normal;
+	}
+em,i{
+	font-style:normal;
+   }
+img{
+ border:none;
+ vertical-align:middle;
+  }
+a{
+	text-decoration:none;
+	color:#000;
+ }
+table{
+	border-spacing:0;
+	 border-collapse:collapse;
+	 }
+	 th,td{
+	 	height:100px;
+	 	text-align:left; 
+	 	vertical-align:top;
+	 }
+input{
+	outline:none;
+	margin:0;padding:0;
+	background:none;border:none; 
+	font-size:12px; 
+	font-family:"Microsoft Yahei";
+   }
+textarea{
+ overflow:auto;
+  resize:none;
+ }
 .fl{
     float : left;
 }
@@ -18,8 +54,15 @@ textarea{ overflow:auto; resize:none;}
     float : right;
 }
 .clearfix{*zoom:1;}
-.clearfix:after{content:""; clear:both; display:block;}
-.clearDiv{clear:both; height:0;font-size:0; overflow:hidden;}
+.clearfix:after{
+	content:""; 
+	clear:both; display:block;
+  }
+.clearDiv
+{clear:both; 
+	height:0;font-size:0; 
+	overflow:hidden;
+}
 /*主体*/
 .layout{
     width:1000px;
