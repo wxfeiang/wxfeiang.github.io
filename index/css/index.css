@@ -29,8 +29,7 @@
         font: 20px/64px " MicrosoftYaHei";
         color: #fff; }
       .index-nav .nav-dic .nav-list li a:hover {
-        color: red;
-        background: blue; }
+        color: red; }
   .index-nav .meu-btn .btn {
     margin: 12px 25px 0 0;
     padding: 4px 6px;
@@ -42,27 +41,89 @@
       height: 2px;
       background: #111; }
 
+/* pulblic */
+.in-layout {
+  margin: 0 auto;
+  padding: 0 10%; }
+
+.in-title {
+  padding: 20px 0;
+  font: bold 20px/30px " MicrosoftYaHei";
+  text-align: center; }
+  .in-title span {
+    margin: 6px auto 0;
+    display: block;
+    width: 10%;
+    border-bottom: 4px solid #000; }
+
 /* aboutme */
-.about-me .about-title {
-  padding: 40px 0 0 0;
-  border-bottom: 2px solid #000;
-  box-shadow: 6px 6px 2px #ccc;
-  text-align: center;
-  font: bold 40px/78px " MicrosoftYaHei"; }
-.about-me .about-dic {
-  padding: 136px 0 0 0; }
-  .about-me .about-dic .ab-list {
-    margin: 0 110px;
-    padding: 40px 10px 10px 40px;
-    width: 400px;
-    height: 220px;
-    background: blue;
-    box-shadow: 10px 10px 5px #111;
-    color: #fff; }
-    .about-me .about-dic .ab-list .right-title {
-      font: bold 20px/30px " MicrosoftYaHei"; }
-    .about-me .about-dic .ab-list .right-dec {
-      font: bold 14px/20px " MicrosoftYaHei";
-      text-indent: 2em; }
+.about-me {
+  overflow: hidden; }
+  .about-me .about-dic {
+    padding: 136px 0 0 0;
+    width: 130%; }
+    .about-me .about-dic .ab-list {
+      margin: 0 9% 0 0;
+      padding: 40px 10px 10px 40px;
+      width: 30%;
+      height: 220px;
+      background: #000;
+      box-shadow: 10px 10px 5px #111;
+      font: 14px/30px " MicrosoftYaHei";
+      color: #fff; }
+      .about-me .about-dic .ab-list li {
+        line-height: 30px;
+        color: #fff; }
+      .about-me .about-dic .ab-list .right-title {
+        font: bold 20px/30px " MicrosoftYaHei"; }
+      .about-me .about-dic .ab-list .right-dec {
+        text-indent: 2em; }
+
+/* skill */
+.skill-me .skill-dec {
+  height: 300px;
+  background: #901616; }
+
+/* expre-me */
+.expre-me .exper-list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  margin-left: -1.5px;
+  background: red; }
+.expre-me .exper-list {
+  position: relative;
+  height: 300px;
+  background: #901625; }
+  .expre-me .exper-list .exper-box1 {
+    height: 150px;
+    background: blue; }
+    .expre-me .exper-list .exper-box1 .expre-l1 {
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      text-align: center;
+      background: #fff; }
+    .expre-me .exper-list .exper-box1 .expre-l2 {
+      width: 40%;
+      height: 150px;
+      text-align: right;
+      background: red; }
+  .expre-me .exper-list .exper-box2 {
+    height: 150px;
+    text-align: center;
+    background: blue; }
+    .expre-me .exper-list .exper-box2 .expre-l3 {
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      background: #fff; }
+    .expre-me .exper-list .exper-box2 .expre-l4 {
+      width: 150px;
+      height: 150px;
+      background: #fff; }
 
 /*# sourceMappingURL=index.css.map */
