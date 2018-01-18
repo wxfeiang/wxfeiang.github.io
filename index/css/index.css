@@ -58,7 +58,8 @@
 
 /* aboutme */
 .about-me {
-  overflow: hidden; }
+  overflow: hidden;
+  background: #000; }
   .about-me .about-dic {
     padding: 136px 0 0 0;
     width: 130%; }
