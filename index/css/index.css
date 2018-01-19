@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* date: 2018.01-01 authour: 鐜嬮箯 */
+/* date: 2018.01-01 authour: wangpeng  */
 /* top鍖哄煙 */
 .banner-hd {
   width: 100vw;
@@ -8,7 +8,7 @@
   .banner-hd .bn-name {
     padding: 20px;
     text-align: center;
-    font: 80px/100px "Micsoft YaHei";
+    font: 80px/100px "MicrosoftYaHei";
     color: #fff; }
   .banner-hd .bn-dec {
     margin: 0 0 0 10px;
@@ -17,7 +17,6 @@
 
 /* nav */
 .index-nav {
-  height: 64px;
   background: #111; }
   .index-nav .nav-dic {
     margin: 0 auto; }
@@ -49,7 +48,8 @@
 .in-title {
   padding: 20px 0;
   font: bold 20px/30px " MicrosoftYaHei";
-  text-align: center; }
+  text-align: center;
+  background: #ccc; }
   .in-title span {
     margin: 6px auto 0;
     display: block;
@@ -59,12 +59,10 @@
 /* aboutme */
 .about-me {
   overflow: hidden;
-  background: #000; }
+  background: #e01818; }
   .about-me .about-dic {
-    padding: 136px 0 0 0;
-    width: 130%; }
+    padding: 40px 0; }
     .about-me .about-dic .ab-list {
-      margin: 0 9% 0 0;
       padding: 40px 10px 10px 40px;
       width: 30%;
       height: 220px;
@@ -81,50 +79,69 @@
         text-indent: 2em; }
 
 /* skill */
-.skill-me .skill-dec {
-  height: 300px;
-  background: #901616; }
+.skill-me {
+  background: red; }
+  .skill-me .skill-dec {
+    height: 300px;
+    background: #901616; }
 
 /* expre-me */
-.expre-me .exper-list:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  margin-left: -1.5px;
-  background: red; }
-.expre-me .exper-list {
-  position: relative;
-  height: 300px;
-  background: #901625; }
-  .expre-me .exper-list .exper-box1 {
-    height: 150px;
-    background: blue; }
-    .expre-me .exper-list .exper-box1 .expre-l1 {
+.expre-me {
+  background: #483333; }
+  .expre-me .exper-list:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    margin-left: -1.5px;
+    background: #FFF; }
+  .expre-me .exper-list {
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0 0 0;
+    background: #901625; }
+    .expre-me .exper-list .exper-box .expre-l1 {
+      position: absolute;
+      left: 50%;
+      margin-left: -75px;
+      padding: 30px 0 0 0;
       width: 150px;
-      height: 150px;
-      border-radius: 75px;
+      height: 120px;
+      vertical-align: middle;
+      border-radius: 50%;
       text-align: center;
-      background: #fff; }
-    .expre-me .exper-list .exper-box1 .expre-l2 {
-      width: 40%;
-      height: 150px;
-      text-align: right;
-      background: red; }
-  .expre-me .exper-list .exper-box2 {
-    height: 150px;
-    text-align: center;
-    background: blue; }
-    .expre-me .exper-list .exper-box2 .expre-l3 {
-      width: 150px;
-      height: 150px;
-      border-radius: 75px;
-      background: #fff; }
-    .expre-me .exper-list .exper-box2 .expre-l4 {
-      width: 150px;
-      height: 150px;
-      background: #fff; }
+      background: #fff;
+      font: bold 16px/30px " MicrosoftYaHei"; }
+    .expre-me .exper-list .exper-box .expre-l2 {
+      padding: 40px;
+      width: 35%;
+      height: 100px;
+      text-align: right; }
+    .expre-me .exper-list .exper-box .epr-l2 {
+      bottom: 0; }
+    .expre-me .exper-list .exper-box .epr-l3 {
+      float: right;
+      text-align: left; }
+
+/* demo */
+.demo-me {
+  height: 500px;
+  background: #ccc; }
+  .demo-me .demo-box {
+    background: red;
+    width: 120%;
+    overflow: hidden; }
+    .demo-me .demo-box div {
+      float: left;
+      margin-right: 1%;
+      width: 20%;
+      height: 222px;
+      background: blue; }
+
+.contact-me {
+  height: 500px;
+  background: #c4c4c4; }
 
 /*# sourceMappingURL=index.css.map */

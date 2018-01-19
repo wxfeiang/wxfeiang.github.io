@@ -1,4 +1,4 @@
-/* date: 2018.01-01 authour: 王鹏 */
+/* date: 2018.01-01 authour: wangpeng  */
 
 /* top区域 */
 .banner-hd
@@ -9,7 +9,7 @@
   .bn-name
     padding: 20px
     text-align: center
-    font: 80px/100px "Micsoft YaHei"
+    font: 80px/100px "MicrosoftYaHei"
     color: #fff
   .bn-dec
     margin: 0 0 0 10px
@@ -17,7 +17,6 @@
     font-size: 18px
 /* nav */
 .index-nav
-  height: 64px
   background: #111
   .nav-dic
     margin: 0 auto 
@@ -50,6 +49,7 @@
   padding: 20px 0
   font: bold 20px/30px " MicrosoftYaHei"
   text-align: center 
+  background: #ccc
   span
     margin: 6px auto  0
     display: block
@@ -58,12 +58,10 @@
 /* aboutme */
 .about-me
   overflow: hidden
-  background: #000
+  background: #e01818
   .about-dic
-    padding: 136px 0 0 0 
-    width: 130%
+    padding: 40px 0
     .ab-list
-      margin: 0 9% 0 0
       padding: 40px 10px 10px 40px 
       width: 30%
       height: 220px 
@@ -81,12 +79,13 @@
         
 /* skill */
 .skill-me
+  background: red
   .skill-dec
-    
     height: 300px
     background: #901616
 /* expre-me */
 .expre-me
+  background: #483333
   .exper-list:before
     content: ""
     position: absolute
@@ -95,40 +94,57 @@
     left: 50%
     width: 2px
     margin-left: -1.5px
-    background: red    
+    background: #FFF   
   .exper-list
     position: relative
-    height: 300px
+    overflow: hidden
+    margin: 40px 0 0 0 
     background: #901625
-    .exper-box1
-      height: 150px
-      background: blue
+    .exper-box
       .expre-l1
+        position: absolute
+        left: 50%
+        margin-left: -75px
+        padding: 30px 0 0 0
         width: 150px
-        height: 150px
-        border-radius: 75px
+        height: 120px
+        vertical-align: middle
+        border-radius: 50%
         text-align: center
         background: #fff
+        font: bold 16px/30px " MicrosoftYaHei"
       .expre-l2
-        width: 40%
-        height: 150px
+        padding: 40px
+        width: 35%
+        height: 100px
         text-align: right
-        background: red
-    .exper-box2
-      height: 150px
-      text-align: center
-      background: blue
-      .expre-l3
-        width: 150px
-        height: 150px
-        border-radius: 75px
-        background: #fff
-      .expre-l4
-        width: 150px
-        height: 150px
-        background: #fff
+      .epr-l2
+        bottom: 0
+      .epr-l3
+        float: right
+        text-align: left  
+/* demo */
+.demo-me
+  height: 500px
+  background: #ccc
+  .demo-box
+    background: red 
+    width: 120%
+    overflow: hidden
+    div
+      float: left
+      margin-right: 1%
+      width: 20%
+      height: 222px 
 
-        
+      background: blue
+
+      
+.contact-me
+  height: 500px
+  background: #c4c4c4
+ 
+
 
        
       
