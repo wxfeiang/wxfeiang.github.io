@@ -53,7 +53,9 @@ textarea{
 .fr{
     float : right;
 }
-.clearfix{*zoom:1;}
+.clearfix{
+	*zoom:1;
+}
 .clearfix:after{
 	content:""; 
 	clear:both; display:block;
