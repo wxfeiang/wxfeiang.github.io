@@ -1,4 +1,24 @@
 /* date: 2018.01-01 authour: wangpeng  */
+/* pulblic */
+.in-layout {
+  margin: 0 auto;
+  padding: 0 10%;
+  height: 100vh; }
+
+.in-title {
+  padding: 40px 0;
+  font: bold 36px/46px " MicrosoftYaHei";
+  text-align: center;
+  text-shadow: 5px 5px 5px #FF0000; }
+  .in-title span {
+    margin: 6px auto 0;
+    display: block;
+    width: 10%;
+    border-bottom: 4px solid #e87e04; }
+
+.in-lyoud {
+  padding: 5% 0; }
+
 /* top bannner */
 .banner-hd {
   position: relative;
@@ -37,85 +57,71 @@
         background: #2c3e50; }
 
 /* nav */
-.index-nav {
-  background: #111; }
-  .index-nav .nav-dic {
-    margin: 0 auto; }
-    .index-nav .nav-dic .nav-list li {
-      background: #111; }
-      .index-nav .nav-dic .nav-list li a {
-        display: block;
-        padding: 0 30px;
-        font: 20px/60px " MicrosoftYaHei";
+.indec-nav {
+  padding: 0 2%;
+  background: #2c3e50;
+  overflow: hidden; }
+  .indec-nav .nav-inner {
+    font: 30px/66px " MicrosoftYaHei";
+    text-align: center;
+    color: #fff; }
+    .indec-nav .nav-inner .nav-list {
+      margin: 0 0 0 40%;
+      width: 50%; }
+      .indec-nav .nav-inner .nav-list li a {
+        padding: 0 20px;
+        font-size: 18px;
         color: #fff; }
-      .index-nav .nav-dic .nav-list li a:hover {
-        color: red; }
-  .index-nav .meu-btn .btn {
-    margin: 12px 25px 0 0;
-    padding: 4px 6px;
-    border: 4px solid #3c3f41; }
-    .index-nav .meu-btn .btn .i-con {
-      display: block;
-      margin: 4px 0;
-      width: 25px;
-      height: 2px;
-      background: #111; }
-
-/* pulblic */
-.in-layout {
-  margin: 0 auto;
-  padding: 0 10%; }
-
-.in-title {
-  padding: 40px 0;
-  font: bold 36px/46px " MicrosoftYaHei";
-  text-align: center;
-  text-shadow: 5px 5px 5px #FF0000; }
-  .in-title span {
-    margin: 6px auto 0;
-    display: block;
-    width: 10%;
-    border-bottom: 4px solid #e87e04; }
-
-.in-lyoud {
-  padding: 5% 0; }
+      .indec-nav .nav-inner .nav-list li a:hover {
+        color: #E87E04; }
+      .indec-nav .nav-inner .nav-list li:hover {
+        background: #30455a; }
+    .indec-nav .nav-inner .nav-btn {
+      color: #fff; }
 
 /* aboutme */
 .about-me {
   overflow: hidden;
   background: url("../image/banner4.jpg") no-repeat center center; }
   .about-me .about-dic {
-    padding: 5% 10%;
-    opacity: 0.8; }
+    padding: 5% 10%; }
     .about-me .about-dic .ab-list {
       padding: 40px 10px 10px 40px;
       width: 35%;
       height: 220px;
-      background: #000;
-      box-shadow: 10px 10px 5px #111;
+      background: #002b36;
+      box-shadow: 10px 10px 5px #003259;
       font: 14px/30px " MicrosoftYaHei";
       color: #fff; }
       .about-me .about-dic .ab-list li {
-        line-height: 30px;
-        color: #fff; }
+        color: #fff;
+        font: italic 20px/30px " MicrosoftYaHei"; }
       .about-me .about-dic .ab-list .right-title {
-        text-align: right;
+        text-align: center;
         font: bold 20px/30px " MicrosoftYaHei"; }
       .about-me .about-dic .ab-list .right-dec {
-        font-style: italic;
+        font: italic 16px/26px " MicrosoftYaHei";
         text-indent: 2em; }
         .about-me .about-dic .ab-list .right-dec span {
           color: red; }
 
 /* skill */
 .skill-me {
-  background: url("../image/banner (1).jpg") no-repeat center center; }
+  background: url("../image/banner (1).jpg") no-repeat center center;
+  /* flash */ }
   .skill-me .skill-dip {
     display: table-cell;
     padding: 0 2%;
     vertical-align: middle;
     font: 20px/40px "MicrosoftYaHei"; }
 
+@keyframes exrl {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
 /* expre-me */
 .expre-me {
   background: url("../image/banner3.jpg") no-repeat center center; }
@@ -142,7 +148,8 @@
       border-radius: 50%;
       text-align: center;
       background: #fff;
-      font: bold 16px/30px " MicrosoftYaHei"; }
+      font: bold 16px/30px " MicrosoftYaHei";
+      animation: exrl 10s linear infinite; }
     .expre-me .exper-list .exper-box .expre-l2 {
       padding: 40px;
       width: 35%;
