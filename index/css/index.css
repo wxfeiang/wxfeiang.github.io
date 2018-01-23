@@ -1,9 +1,11 @@
 /* date: 2018.01-01 authour: wangpeng  */
+/* PC */
 /* pulblic */
 .in-layout {
   margin: 0 auto;
   padding: 0 10%;
-  height: 100vh; }
+  height: 100vh;
+  box-sizing: border-box; }
 
 .in-title {
   padding: 40px 0;
@@ -19,6 +21,13 @@
 .in-lyoud {
   padding: 5% 0; }
 
+@keyframes flashl {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
 /* top bannner */
 .banner-hd {
   position: relative;
@@ -40,7 +49,7 @@
       line-height: 60px;
       font-size: 35px; }
     .banner-hd .bn-cont .ba-stite {
-      font: bold 30px/60px " MicrosoftYaHei"; }
+      font: bold 30px/70px " MicrosoftYaHei"; }
     .banner-hd .bn-cont .ba-sbtn {
       padding: 20px 0;
       font: bold 18px/46px " MicrosoftYaHei"; }
@@ -51,8 +60,9 @@
         width: 150px;
         border: 2px solid #2c3e50;
         border-radius: 5px;
-        color: #fff; }
+        color: #2c3e50; }
       .banner-hd .bn-cont .ba-sbtn span:hover {
+        color: #fff;
         cursor: pointer;
         background: #2c3e50; }
 
@@ -67,16 +77,21 @@
     color: #fff; }
     .indec-nav .nav-inner .nav-list {
       margin: 0 0 0 40%;
-      width: 50%; }
+      width: 50%;
+      text-align: center; }
       .indec-nav .nav-inner .nav-list li a {
+        display: inline-block;
         padding: 0 20px;
         font-size: 18px;
         color: #fff; }
       .indec-nav .nav-inner .nav-list li a:hover {
-        color: #E87E04; }
+        font-size: 28px;
+        color: #E87E04;
+        animation: flashl 0.5s linear; }
       .indec-nav .nav-inner .nav-list li:hover {
         background: #30455a; }
     .indec-nav .nav-inner .nav-btn {
+      display: none;
       color: #fff; }
 
 /* aboutme */
@@ -115,13 +130,6 @@
     vertical-align: middle;
     font: 20px/40px "MicrosoftYaHei"; }
 
-@keyframes exrl {
-  0% {
-    transform: rotate(0deg); }
-  50% {
-    transform: rotate(180deg); }
-  100% {
-    transform: rotate(360deg); } }
 /* expre-me */
 .expre-me {
   background: url("../image/banner3.jpg") no-repeat center center; }
@@ -149,7 +157,7 @@
       text-align: center;
       background: #fff;
       font: bold 16px/30px " MicrosoftYaHei";
-      animation: exrl 10s linear infinite; }
+      animation: flashl 10s linear infinite; }
     .expre-me .exper-list .exper-box .expre-l2 {
       padding: 40px;
       width: 35%;
@@ -167,6 +175,7 @@
 
 /* demo */
 .demo-me {
+  background: url("../image/banner5.jpg") no-repeat center center;
   overflow: hidden; }
   .demo-me .demo-box {
     width: 110%;
@@ -179,8 +188,7 @@
       width: 20%; }
       .demo-me .demo-box .demo-dic .demo-bl {
         width: 100%;
-        height: 222px;
-        background: blue; }
+        height: 222px; }
       .demo-me .demo-box .demo-dic .demo-no {
         position: absolute;
         left: 0;
@@ -199,10 +207,63 @@
     font-size: 30px;
     text-align: center; }
 
+/* contact */
 .contact-me {
-  height: 500px; }
-  .contact-me #message {
-    width: 100%;
-    height: 100px; }
+  overflow: hidden;
+  background: url("../image/banner6.jpg") no-repeat center center; }
+  .contact-me .con-form {
+    font: 16px/20px "MicsoftYaHei"; }
+    .contact-me .con-form .con-area {
+      box-sizing: border-box;
+      padding: 6px 12px;
+      width: 100%;
+      outline: none;
+      border: 1px dashed #e3e197;
+      border-radius: 5px;
+      overflow: auto;
+      font: 16px/20px "MicsoftYaHei";
+      opacity: 0.8; }
+    .contact-me .con-form .con-par {
+      padding: 10px 0; }
+      .contact-me .con-form .con-par .con-btn {
+        width: 10%;
+        height: 40px;
+        border: 0;
+        border-radius: 2px;
+        font-size: 18px;
+        background: #c9e6ff; }
+      .contact-me .con-form .con-par .con-btn:hover {
+        cursor: pointer;
+        color: #fff;
+        background: #92bde7; }
+  .contact-me .con-nt {
+    font: bold 16px/30px "MicsoftYaHei"; }
+  .contact-me hr {
+    border: 1px dashed #ccc; }
+  .contact-me .new-list {
+    padding: 10px 0; }
+    .contact-me .new-list .new-li {
+      margin: 10px 0;
+      padding: 4px 8px 4px 0;
+      border: 1px solid #e3e197;
+      border-radius: 2px;
+      background: #e0fff; }
+      .contact-me .new-list .new-li .use-cont {
+        padding: 6px 4px 0 10px;
+        width: 85%;
+        font: 14px/24px "MicsoftYaHei"; }
+      .contact-me .new-list .new-li .new-right {
+        text-align: right;
+        color: #111; }
+
+/* footer */
+.in-footer {
+  padding: 0 10%;
+  background: url("../image/banner7.jpg") no-repeat center center; }
+  .in-footer .fter-dec {
+    padding: 20px;
+    height: 60px;
+    text-align: center;
+    font: 16px/24px "MicsoftYaHei"; }
 
 /*# sourceMappingURL=index.css.map */

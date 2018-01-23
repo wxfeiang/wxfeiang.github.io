@@ -1,9 +1,11 @@
 /* date: 2018.01-01 authour: wangpeng  */
+/* PC */
 /* pulblic */ 
 .in-layout
   margin: 0 auto
   padding: 0 10%
   height: 100vh
+  box-sizing: border-box
 .in-title  
   padding: 40px 0
   font: bold 36px/46px " MicrosoftYaHei"
@@ -16,6 +18,14 @@
     border-bottom : 4px solid #e87e04
 .in-lyoud 
   padding: 5% 0 
+
+@keyframes flashl
+  0%
+    transform: rotate(0deg)
+  50%
+    transform: rotate(180deg)  
+  100%
+    transform: rotate(360deg)    
 /* top bannner*/
 .banner-hd
   position: relative
@@ -37,7 +47,7 @@
       line-height: 60px
       font-size: 35px
     .ba-stite
-      font: bold 30px/60px " MicrosoftYaHei" 
+      font: bold 30px/70px " MicrosoftYaHei" 
     .ba-sbtn
       padding: 20px 0
       font: bold 18px/46px " MicrosoftYaHei"
@@ -48,8 +58,9 @@
         width: 150px 
         border: 2px solid #2c3e50
         border-radius: 5px  
-        color: #fff 
+        color: #2c3e50 
       span:hover
+        color: #fff
         cursor: pointer
         background: #2c3e50
 /* nav */
@@ -64,17 +75,22 @@
     .nav-list
       margin: 0  0 0 40%
       width: 50%
+      text-align: center
       li
         a 
+          display: inline-block
           padding: 0 20px
           font-size: 18px
           color: #fff
         a:hover
+          font-size: 28px
           color: #E87E04
+          animation: flashl 0.5s linear 
       li:hover
-        background: #30455a   
+        background: #30455a
+           
     .nav-btn
-
+      display: none
       color: #fff
 
 /* aboutme */
@@ -112,16 +128,6 @@
     vertical-align: middle
     font: 20px/40px "MicrosoftYaHei"
   /* flash */  
-@keyframes exrl
-  0%
-    transform: rotate(0deg)
-  50%
-    transform: rotate(180deg)  
-  100%
-    transform: rotate(360deg)  
-
-
-
 
 /* expre-me */
 .expre-me
@@ -152,7 +158,7 @@
         text-align: center
         background: #fff
         font: bold 16px/30px " MicrosoftYaHei"
-        animation: exrl 10s linear infinite
+        animation: flashl 10s linear infinite
       .expre-l2
         padding: 40px
         width: 35%
@@ -167,9 +173,10 @@
       .epr-l3
         float: right
         text-align: left  
+
 /* demo */
 .demo-me
-
+  background: url("../image/banner5.jpg") no-repeat center center
   overflow: hidden
   .demo-box
     width: 110%
@@ -183,7 +190,6 @@
       .demo-bl
         width: 100%
         height: 222px 
-        background: blue
       .demo-no
         position: absolute
         left: 0
@@ -204,15 +210,69 @@
       font-size: 30px
       text-align: center
 
-
-
-      
+/* contact */
 .contact-me
-  height: 500px
-  #message
-    width: 100%
-    height: 100px
- 
+  overflow: hidden
+  background: url("../image/banner6.jpg") no-repeat center center
+  .con-form
+    font: 16px/20px "MicsoftYaHei"
+    .con-area
+      box-sizing: border-box
+      padding: 6px 12px
+      width: 100%
+      outline: none
+      border: 1px dashed #e3e197
+      border-radius: 5px
+      overflow: auto
+      font: 16px/20px "MicsoftYaHei"
+      opacity: 0.8
+    .con-par
+      padding: 10px 0
+      .con-btn
+        width: 10%
+        height: 40px
+        border: 0
+        border-radius: 2px 
+        font-size: 18px
+        background: #c9e6ff
+      .con-btn:hover  
+        cursor: pointer
+        color: #fff
+        background: #92bde7
+
+  .con-nt
+    font: bold 16px/30px "MicsoftYaHei"
+  hr
+    border: 1px dashed #ccc 
+
+  .new-list
+    padding: 10px 0 
+    .new-li
+      margin: 10px 0 
+      padding: 4px  8px  4px  0
+      border: 1px solid #e3e197
+      border-radius: 2px
+      background: #e0fff
+      .use-cont
+        padding: 6px 4px 0 10px 
+        width: 85%
+        font: 14px/24px "MicsoftYaHei"
+      .new-right
+        text-align: right 
+        color: #111
+
+/* footer */
+.in-footer
+  padding: 0 10%
+  background: url("../image/banner7.jpg") no-repeat center center
+  .fter-dec
+    padding: 20px 
+    height: 60px
+    text-align: center
+    font: 16px/24px "MicsoftYaHei"
+
+
+
 
 
        

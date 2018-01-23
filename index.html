@@ -15,7 +15,8 @@
     <!-- 有字库文件 -->
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="index/css/index.css">
-
+    <!-- 700尺寸 -->
+    <link href="index/css/inde-app.css" rel="stylesheet" type="text/css" media="screen and (max-width:720px)"/>
 
 </head>
 <body>
@@ -27,19 +28,18 @@
 	      </video>
 	      <div class="bn-cont">
                <h2 class="cssfaf4632221bade ba-title">Hello, this is my Resume !</h2>
-               <h3 class="ba-stite">一个极具潜力的Web前端工程师</h3>
+               <h3 class="ba-stite">一位极具潜力的Web前端工程师</h3>
                 <p class= "ba-sbtn">
                     <span class="bn-sp">关于我</span>
                     <span>我的案例</span>
                 </p>
-	      </div>
-	     
+	      </div>     
 	</div>
 	<!-- banner  END-->
 	<!-- nav -->
 	<div class=" indec-nav">
        <div class="clearfix nav-inner">
-       	   <p class="fl">Resume</p>
+       	      <p class="fl">Resume</p>
           <!-- 导航菜单 -->
              <ul class="clearfix fl nav-list">
                <li class="fl"><a href="">首页</a></li>
@@ -62,7 +62,7 @@
 	       <ul class="fl ab-list">
 	         <li><i class="fa fa-user"></i> &nbsp王鹏</li>
 	         <li><i class="fa fa-location-arrow" ></i> &nbsp1993-11</li>
-	         <li><i class="fa fa-location-arrow"></i> &nbsp北京市</li>
+	         <li><i class="fa fa-bolt"></i></i> &nbsp北京市</li>
 	         <li><i class="fa fa-envelope"></i> &nbspwxfeiang@foxmail.com</li>
 	         <li><i class="fa fa-phone"></i> &nbsp18309469751</li>
 	       </ul>
@@ -122,7 +122,6 @@
 	                 网络安防与维护<br>
 	                 负责解决网络连接中的异常问题，进行相关故障分析、处理及总结，收集客户反馈的信息并及时处理<br>
 
-
 	              </div>
 
 
@@ -136,8 +135,7 @@
 	<!-- demo -->
 	<div class="in-layout demo-me">
          <h3 class="in-title">我的经历<span></span></h3>
-         <div class="in-lyoud ">
-
+         <div class="in-lyoud demo-layout">
 	          <div class="demo-box">
 		             <div class="demo-dic">
 		               <div class="demo-bl"></div>
@@ -166,37 +164,43 @@
 	<!-- demo- END -->
 	<!--  Contact -->
 	<div class="in-layout contact-me">
-        <h3 class="in-title">给我留言<span></span></h3>
-       
-        
-        <textarea name="message" rows="5" id="message" rows="10" placeholder="wo youhua yaoshuo "></textarea>
-         <p>昵称 :<input type="text" >
-         邮箱 :<input type="text" ></p>  
-
-
-         <button>留言</button>
-         <h3>最新评论</h3>
+        <h3 class="in-title">留言板<span></span></h3>
+        <form action="" class=" con-form">
+	      	 <textarea name="message" rows="4" id="message" placeholder="请开始你的表演......" class="con-area"></textarea>
+            <p class="clearfix  con-par">
+              <button type="submit" class="fr con-btn">留言</button>
+            </p>
+        </form>
+         <h3 class="con-nt">最新评论</h3>
          <hr>
-         <ul>
-            <li>XXX 说:</li>
-             <li>
-                <p></p>
-                <p></p>
+          <ul class="new-list">
+            
+             <li class="clearfix new-li">  
+                 <p class=" fl use-cont">
+                 	你这个简历好屌啊
+                 </p>
+                  <p class="fr new-right">2017-12-12<br>
+                     18:21:20
+                  </p>
              </li>
-         </ul>
 
-
-
+              
+          </ul>
 	</div>
 	<!--  Contact END -->
  <!-- footer -->
-    <div class="in-layout">
-       以上内容有所木方
-
+    <div class="in-footer">
+        <p class="fter-dec">
+	         F12（command+option+J）有彩蛋<br>
+			 All Rights Reserved<br>
+			蜀ICP备15021330号 Copyright © 2015 - <span>2017<span><br>
+        </p>
     </div>
  <!-- footer END-->
      
-
+<!-- right-side -->
+   <!-- <div></div> -->
+<!-- right-side END-->
    
 </body>
 </html>
