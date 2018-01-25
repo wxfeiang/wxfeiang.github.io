@@ -105,7 +105,7 @@
       width: 35%;
       height: 220px;
       background: #002b36;
-      box-shadow: 10px 10px 5px #003259;
+      box-shadow: 0 0 10px #003259;
       font: 14px/30px " MicrosoftYaHei";
       color: #fff; }
       .about-me .about-dic .ab-list li {

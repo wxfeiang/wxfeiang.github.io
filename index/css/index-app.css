@@ -8,6 +8,7 @@ html {
   margin: 0 auto;
   padding: 0 10%;
   height: 100vh;
+  overflow: hidden;
   box-sizing: border-box; }
 
 .in-title {
@@ -67,5 +68,202 @@ html {
       .banner-hd .bn-cont .ba-sbtn span:hover {
         color: #fff;
         background: #2c3e50; }
+
+/* nav */
+.indec-nav {
+  background: #2c3e50;
+  overflow: hidden; }
+  .indec-nav .nav-inner {
+    position: relative;
+    font: 0.36rem/0.8rem " MicrosoftYaHei";
+    color: #fff; }
+    .indec-nav .nav-inner p {
+      float: none; }
+    .indec-nav .nav-inner .nav-list {
+      display: none;
+      float: none; }
+      .indec-nav .nav-inner .nav-list li {
+        float: none; }
+        .indec-nav .nav-inner .nav-list li a {
+          display: inline-block;
+          padding: 0 0.2rem;
+          font-size: 0.28rem;
+          color: #fff; }
+        .indec-nav .nav-inner .nav-list li a:hover {
+          font-size: 0.28rem;
+          color: #E87E04; }
+      .indec-nav .nav-inner .nav-list li:hover {
+        background: #30455a; }
+        .indec-nav .nav-inner .nav-list li:hover a {
+          font-size: 0.38rem;
+          color: #E87E04; }
+    .indec-nav .nav-inner .nav-btn {
+      position: absolute;
+      right: 1%;
+      top: 0;
+      display: block;
+      color: #fff; }
+
+/* aboutme */
+.about-me {
+  overflow: hidden;
+  background: url("../image/banner4.jpg") no-repeat left top; }
+  .about-me .about-dic {
+    padding: 0; }
+    .about-me .about-dic .ab-list {
+      float: none;
+      margin: 1rem auto;
+      padding: 0.4rem 0.1rem 0.4rem 0.4rem;
+      background: #002b36;
+      box-shadow: 0 0 0.5rem #003259;
+      font: 0.28rem/0.56rem " MicrosoftYaHei";
+      color: #fff; }
+      .about-me .about-dic .ab-list li {
+        color: #fff;
+        font: italic 0.36rem/0.72rem " MicrosoftYaHei"; }
+      .about-me .about-dic .ab-list .right-title {
+        text-align: center;
+        font: bold 0.36rem/0.72rem " MicrosoftYaHei"; }
+      .about-me .about-dic .ab-list .right-dec {
+        font: 0.3rem/0.5rem " MicrosoftYaHei";
+        text-indent: 2em; }
+        .about-me .about-dic .ab-list .right-dec span {
+          color: red; }
+
+/* skill */
+.skill-me {
+  background: url("../image/banner1.jpg") no-repeat left top; }
+  .skill-me .skill-dip {
+    display: table-cell;
+    padding: 0 2%;
+    vertical-align: middle;
+    font: 0.3rem/0.6rem "MicrosoftYaHei"; }
+
+/* expre-me */
+.expre-me {
+  background: url("../image/banner3.jpg") no-repeat left top;
+    background-content: "";
+    background-position: absolute;
+    background-top: 0;
+    background-bottom: 0;
+    background-left: 1rem;
+    background-width: 0.04rem;
+    background-margin-left: -1.5px;
+    background-background: #fff; }
+  .expre-me .exper-list {
+    position: relative;
+    overflow: hidden; }
+    .expre-me .exper-list .exper-box .expre-l1 {
+      float: none;
+      padding: 0.4rem 0 0 0;
+      width: 2rem;
+      height: 1.6rem;
+      vertical-align: middle;
+      border-radius: 50%;
+      text-align: center;
+      background: #fff;
+      font: bold 0.28rem/0.42rem " MicrosoftYaHei";
+      animation: flashl 10s linear infinite; }
+    .expre-me .exper-list .exper-box .expre-l2 {
+      padding: 0 0.1rem 0.4rem 1.2rem;
+      text-align: left;
+      font: bold 0.28rem/0.56rem " MicrosoftYaHei";
+      color: #333; }
+      .expre-me .exper-list .exper-box .expre-l2 .l3-title {
+        font: bold 0.28rem/0.56rem " MicrosoftYaHei";
+        color: #e87d07; }
+    .expre-me .exper-list .exper-box .epr-l3 {
+      float: right;
+      text-align: left; }
+
+/* demo */
+.demo-me {
+  background: url("../image/banner5.jpg") no-repeat center center;
+  overflow: hidden; }
+  .demo-me .demo-box {
+    overflow: hidden; }
+    .demo-me .demo-box .demo-dic {
+      position: relative;
+      perspective: 800px;
+      float: none;
+      margin: 0 1% 0;
+      width: 100%; }
+      .demo-me .demo-box .demo-dic .demo-bl {
+        height: 20px; }
+      .demo-me .demo-box .demo-dic .demo-no {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: rotateY(90deg);
+        transition: 0.5s;
+        width: 100%;
+        height: 222px;
+        background: rgba(0, 0, 0, 0.8);
+        text-align: center;
+        color: #fff; }
+  .demo-me .demo-dic:hover .demo-no {
+    transform: rotateX(0deg);
+    border: 2px solid #fff;
+    line-height: 222px;
+    font-size: 30px;
+    text-align: center; }
+
+/* contact */
+.contact-me {
+  overflow: hidden;
+  background: url("../image/banner6.jpg") no-repeat center center; }
+  .contact-me .con-form {
+    font: 0.3rem/0.4rem "MicsoftYaHei"; }
+    .contact-me .con-form .con-area {
+      box-sizing: border-box;
+      padding: 0.06rem 0.12rem;
+      width: 100%;
+      outline: none;
+      border: 0.01rem dashed #e3e197;
+      border-radius: 0.05rem;
+      overflow: auto;
+      font: 0.3rem/0.4rem "MicsoftYaHei";
+      opacity: 0.8; }
+    .contact-me .con-form .con-par {
+      padding: 0.1rem 0; }
+      .contact-me .con-form .con-par .con-btn {
+        width: 10%;
+        height: 0.4rem;
+        border: 0;
+        border-radius: 0.02rem;
+        font-size: 0.18rem;
+        background: #c9e6ff; }
+      .contact-me .con-form .con-par .con-btn:hover {
+        cursor: pointer;
+        color: #fff;
+        background: #92bde7; }
+  .contact-me .con-nt {
+    font: bold 0.3rem/0.4rem "MicsoftYaHei"; }
+  .contact-me hr {
+    border: 0.01rem dashed #ccc; }
+  .contact-me .new-list {
+    padding: 0.1rem 0; }
+    .contact-me .new-list .new-li {
+      margin: 0.1rem 0;
+      padding: 0.04rem 0.08rem 0.04rem 0;
+      border: 0.04rem solid #e3e197;
+      border-radius: 0.02rem;
+      background: #e0fff; }
+      .contact-me .new-list .new-li .use-cont {
+        padding: 0.06rem 0.04rem 0 0.1rem;
+        width: 85%;
+        font: 0.28rem/0.4rem "MicsoftYaHei"; }
+      .contact-me .new-list .new-li .new-right {
+        text-align: right;
+        color: #111; }
+
+/* footer */
+.in-footer {
+  background: url("../image/banner7.jpg") no-repeat center center; }
+  .in-footer .fter-dec {
+    padding: 0.2rem;
+    height: 0.6rem;
+    text-align: center;
+    font: 0.3rem/0.4rem "MicsoftYaHei"; }
 
 /*# sourceMappingURL=index-app.css.map */

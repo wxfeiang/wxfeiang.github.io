@@ -7,6 +7,7 @@ html
   margin: 0 auto
   padding: 0 10%
   height: 100vh
+  overflow: hidden
   box-sizing: border-box
 .in-title  
   padding: 0.4rem 0
@@ -65,3 +66,202 @@ html
       span:hover
         color: #fff
         background: #2c3e50    
+/* nav */
+.indec-nav
+  background: #2c3e50
+  overflow: hidden 
+  .nav-inner
+    position: relative
+    font: 0.36rem/0.8rem " MicrosoftYaHei"
+    color: #fff
+    p
+      float: none
+    .nav-list
+      display: none
+      float: none
+      li
+        float: none
+        a 
+          display: inline-block
+          padding: 0 0.2rem
+          font-size: 0.28rem
+          color: #fff
+        a:hover
+          font-size: 0.28rem
+          color: #E87E04
+      li:hover
+        background: #30455a
+        a
+          font-size: 0.38rem
+          color: #E87E04 
+
+    .nav-btn
+      position: absolute
+      right: 1%
+      top: 0
+      display: block
+      color: #fff        
+/* aboutme */
+.about-me
+  overflow: hidden
+  background: url("../image/banner4.jpg") no-repeat left top
+  .about-dic
+    padding: 0
+    .ab-list
+      float: none
+      margin: 1rem auto
+      padding: 0.40rem  0.10rem 0.40rem 0.40rem
+      background: rgb(0,43,54)
+      box-shadow: 0 0 0.5rem rgb(0,50,89)
+      font: 0.28rem/0.56rem " MicrosoftYaHei"
+      color: #fff
+      li
+        color: #fff
+        font: italic 0.36rem/0.72rem " MicrosoftYaHei"
+      .right-title
+        text-align: center
+        font: bold 0.36rem/0.72rem  " MicrosoftYaHei"
+      .right-dec 
+        font: 0.30rem/0.50rem " MicrosoftYaHei"
+        text-indent: 2em
+        span
+          color: red       
+/* skill */
+.skill-me
+  background: url("../image/banner1.jpg") no-repeat left top
+  .skill-dip
+    display: table-cell
+    padding: 0 2%
+    vertical-align: middle
+    font: 0.3rem/0.6rem  "MicrosoftYaHei"
+
+/* expre-me */
+.expre-me
+  background: url("../image/banner3.jpg") no-repeat left top
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 1rem
+    width: 0.04rem
+    margin-left: -1.5px
+    background: #fff  
+  .exper-list
+    position: relative
+    overflow: hidden
+    .exper-box
+      .expre-l1
+        float: none
+        padding: 0.4rem 0 0 0
+        width: 2rem
+        height: 1.6rem
+        vertical-align: middle
+        border-radius: 50%
+        text-align: center
+        background: #fff
+        font: bold 0.28rem/0.42rem " MicrosoftYaHei"
+        animation: flashl 10s linear infinite
+      .expre-l2
+        padding: 0  0.10rem 0.40rem 1.2rem 
+        text-align: left
+        font: bold 0.28rem/0.56rem " MicrosoftYaHei"
+        color: #333
+        .l3-title
+          font: bold 0.28rem/0.56rem  " MicrosoftYaHei"
+          color: #e87d07
+      .epr-l3
+        float: right
+        text-align: left  
+
+/* demo */
+.demo-me
+  background: url("../image/banner5.jpg") no-repeat center center
+  overflow: hidden
+  .demo-box
+    overflow: hidden
+    .demo-dic
+      position: relative
+      perspective: 800px
+      float: none
+      margin:  0 1% 0 
+      width: 100%
+      .demo-bl
+        height: 20px
+      .demo-no
+        position: absolute
+        left: 0
+        top: 0
+        transform: rotateY(90deg)
+        transition: 0.5s
+        width: 100%
+        height: 222px 
+        background: rgba(0,0,0,0.8)
+        text-align: center
+        color: #fff
+        
+  .demo-dic:hover
+    .demo-no
+      transform: rotateX(0deg)
+      border: 2px solid #fff
+      line-height: 222px
+      font-size: 30px
+      text-align: center
+/* contact */
+.contact-me
+  overflow: hidden
+  background: url("../image/banner6.jpg") no-repeat center center
+  .con-form
+    font: 0.3rem/0.4rem "MicsoftYaHei"
+    .con-area
+      box-sizing: border-box
+      padding: 0.06rem 0.12rem
+      width: 100%
+      outline: none
+      border: 0.01rem dashed #e3e197
+      border-radius: 0.05rem
+      overflow: auto
+      font: 0.30rem/0.40rem "MicsoftYaHei"
+      opacity: 0.8
+    .con-par
+      padding: 0.10rem 0
+      .con-btn
+        width: 10%
+        height: 0.4rem
+        border: 0
+        border-radius: 0.02rem
+        font-size: 0.18rem
+        background: #c9e6ff
+      .con-btn:hover  
+        cursor: pointer
+        color: #fff
+        background: #92bde7
+
+  .con-nt
+    font: bold 0.30rem/0.40rem "MicsoftYaHei"
+  hr
+    border: 0.01rem dashed #ccc 
+
+  .new-list
+    padding: 0.10rem  0
+    .new-li
+      margin: 0.10rem 0 
+      padding: 0.04rem  0.08rem  0.04rem  0
+      border: 0.04rem solid #e3e197
+      border-radius: 0.02rem
+      background: #e0fff
+      .use-cont
+        padding: 0.06rem 0.04rem 0 0.1rem
+        width: 85%
+        font: 0.28rem/0.40rem "MicsoftYaHei"
+      .new-right
+        text-align: right 
+        color: #111
+
+/* footer */
+.in-footer
+  background: url("../image/banner7.jpg") no-repeat center center
+  .fter-dec
+    padding: 0.20rem 
+    height: 0.6rem
+    text-align: center
+    font: 0.30rem/0.40rem "MicsoftYaHei"
