@@ -1,4 +1,5 @@
-/* date: 2018.01-01 authour: wangpeng  */
+@charset "UTF-8";
+/* date: 2018.01-01 authour: 王鹏  */
 /* index-app */
 /* pulblic */
 html {
@@ -132,7 +133,7 @@ html {
 
 /* skill */
 .skill-me {
-  background: url("../image/banner1.jpg") no-repeat left top; }
+  background: url("../image/banner1.jpg") no-repeat center center; }
   .skill-me .skill-dip {
     display: table-cell;
     padding: 0 2%;
@@ -141,15 +142,16 @@ html {
 
 /* expre-me */
 .expre-me {
-  background: url("../image/banner3.jpg") no-repeat left top;
-    background-content: "";
-    background-position: absolute;
-    background-top: 0;
-    background-bottom: 0;
-    background-left: 1rem;
-    background-width: 0.04rem;
-    background-margin-left: -1.5px;
-    background-background: #fff; }
+  background: url("../image/banner3.jpg") no-repeat center center; }
+  .expre-me .exper-list:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 1rem;
+    width: 0.04rem;
+    margin-left: -1.5px;
+    background: #fff; }
   .expre-me .exper-list {
     position: relative;
     overflow: hidden; }
@@ -162,7 +164,7 @@ html {
       border-radius: 50%;
       text-align: center;
       background: #fff;
-      font: bold 0.28rem/0.42rem " MicrosoftYaHei";
+      font: bold 0.24rem/0.4rem " MicrosoftYaHei";
       animation: flashl 10s linear infinite; }
     .expre-me .exper-list .exper-box .expre-l2 {
       padding: 0 0.1rem 0.4rem 1.2rem;
@@ -222,14 +224,12 @@ html {
       border: 0.01rem dashed #e3e197;
       border-radius: 0.05rem;
       overflow: auto;
-      font: 0.3rem/0.4rem "MicsoftYaHei";
-      opacity: 0.8; }
+      font: 0.3rem/0.4rem "MicsoftYaHei"; }
     .contact-me .con-form .con-par {
       padding: 0.1rem 0; }
       .contact-me .con-form .con-par .con-btn {
-        width: 10%;
-        height: 0.4rem;
-        border: 0;
+        padding: 0.2rem 0.5rem;
+        border: none;
         border-radius: 0.02rem;
         font-size: 0.18rem;
         background: #c9e6ff; }
@@ -259,11 +259,9 @@ html {
 
 /* footer */
 .in-footer {
-  background: url("../image/banner7.jpg") no-repeat center center; }
-  .in-footer .fter-dec {
-    padding: 0.2rem;
-    height: 0.6rem;
-    text-align: center;
-    font: 0.3rem/0.4rem "MicsoftYaHei"; }
+  background: url("../image/banner7.jpg") no-repeat center top;
+  padding: 0.2rem;
+  text-align: center;
+  font: 0.3rem/0.4rem "MicsoftYaHei"; }
 
 /*# sourceMappingURL=index-app.css.map */
