@@ -3,16 +3,11 @@
 /* index-app */
 /* pulblic */
 html {
-  font-size: 100px;
-  height: 100%; }
-
-body {
-  height: 100%; }
+  font-size: 100px; }
 
 .in-layout {
   margin: 0 auto;
   padding: 0 10%;
-  height: 100%;
   overflow: hidden;
   box-sizing: border-box; }
 
