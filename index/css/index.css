@@ -113,6 +113,9 @@
       .about-me .about-dic .ab-list li {
         color: #fff;
         font: italic 20px/30px " MicrosoftYaHei"; }
+        .about-me .about-dic .ab-list li a {
+          color: #fff;
+          font: italic 20px/30px " MicrosoftYaHei"; }
       .about-me .about-dic .ab-list .right-title {
         text-align: center;
         font: bold 20px/30px " MicrosoftYaHei"; }

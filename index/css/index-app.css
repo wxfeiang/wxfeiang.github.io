@@ -123,6 +123,9 @@ html {
       .about-me .about-dic .ab-list li {
         color: #fff;
         font: italic 0.36rem/0.72rem " MicrosoftYaHei"; }
+        .about-me .about-dic .ab-list li a {
+          color: #fff;
+          font: italic 0.36rem/0.72rem " MicrosoftYaHei"; }
       .about-me .about-dic .ab-list .right-title {
         text-align: center;
         font: bold 0.36rem/0.72rem " MicrosoftYaHei"; }
@@ -184,7 +187,8 @@ html {
   background: url("../image/in-app_05.jpg") no-repeat center center;
   overflow: hidden; }
   .demo-me .demo-box {
-    overflow: hidden; }
+    overflow: hidden;
+    margin: auto 0; }
     .demo-me .demo-box .demo-dic {
       float: left;
       position: relative;
@@ -242,7 +246,6 @@ html {
         background: rgba(202, 10, 10, 0.93);
         color: #fff; }
       .contact-me .con-form .con-par .con-btn:hover {
-        cursor: pointer;
         background: rgba(234, 28, 28, 0.77); }
   .contact-me .con-nt {
     font: bold 0.3rem/0.4rem "MicsoftYaHei"; }
