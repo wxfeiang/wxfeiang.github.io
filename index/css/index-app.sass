@@ -181,12 +181,19 @@ html
   .demo-box
     overflow: hidden
     .demo-dic
+      float: left
       position: relative
       perspective: 800px
-      margin:  0 1% 0 
-      width: 100%
+      margin:  0.5rem 0.1rem 
+      width: 45%
+
       .demo-bl
-        height: 20px
+        width: 100%
+        height: 2.22rem
+        img
+          width: 100%
+          height: 2.22rem
+          border-radius: 0.1rem
       .demo-no
         position: absolute
         left: 0
@@ -194,7 +201,7 @@ html
         transform: rotateY(90deg)
         transition: 0.5s
         width: 100%
-        height: 222px 
+        height: 2.22rem
         background: rgba(0,0,0,0.8)
         text-align: center
         color: #fff
@@ -202,10 +209,11 @@ html
   .demo-dic:hover
     .demo-no
       transform: rotateX(0deg)
-      border: 2px solid #fff
-      line-height: 222px
-      font-size: 30px
+      border: 0.02rem solid #fff
+      line-height: 2.22rem
+      font-size: 0.3rem
       text-align: center
+      border-radius: 0.1rem
 /* contact */
 .contact-me
   overflow: hidden
@@ -224,15 +232,15 @@ html
     .con-par
       padding: 0.10rem 0
       .con-btn
-        padding: 0.2rem 0.5rem
+        padding: 0.1rem 0.4rem
         border: none
         border-radius: 0.02rem
-        font-size: 0.18rem
-        background: #c9e6ff
+        font-size: 0.26rem
+        background: rgba(202, 10, 10, 0.93)
+        color: #fff
       .con-btn:hover  
         cursor: pointer
-        color: #fff
-        background: #92bde7
+        background: rgba(234, 28, 28, 0.77)
 
   .con-nt
     font: bold 0.30rem/0.40rem "MicsoftYaHei"
