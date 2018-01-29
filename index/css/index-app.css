@@ -73,6 +73,7 @@ html {
 /* nav */
 .indec-nav {
   background: #2c3e50;
+  width: 100%;
   overflow: hidden; }
   .indec-nav .nav-inner {
     position: relative;
