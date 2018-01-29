@@ -11,6 +11,7 @@ window.onscroll=function(){
 	innav.style.top = '0';
 	innav.style.left = '0';
 	innav.style.width = '100%';
+	innav.style.zIndex = "9999";
 
 	//console.log(topScroll-h);
 	}
