@@ -3,7 +3,7 @@ window.onscroll=function(){
 	var topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
 	var innavTop = getId("innav").offsetTop;
 	var abmeTop = getId("aboutme").offsetTop;
-	var h = document.documentElement.clientHeight || document.body.clientHeight ;
+	var h = document.documentElement.clientHeight || document.body.clientHeight ;  //窗口的可视高
 	//console.log(topScroll);
 	//console.log(h)
 	if(topScroll>innavTop){
@@ -66,9 +66,76 @@ navbtn.onclick = function() {
 	   n++;
    }
    
+/*contact-me*/
+//  初始化数据库对象
+var config = {
+  syncURL: "https://wd9064896835arjzau.wilddogio.com/" //输入节点 URL
+};
+wilddog.initializeApp(config);
+// 调用数据库提供的方法  链接数据库  到指定的表
+var messageRef = wilddog.sync().ref("massage");
+// 添加提交事件
+var myform = getId("myform");
+myform.addEventListener("submit",submitForm);
 
 
 
+
+
+function submitForm(e){
+   /*阻止默认刷新*/
+    e.preventDefault();
+    var message = getId("message").value ;
+ /*事件对象*/
+	var date =  new Date();
+	var y = date.getFullYear();
+	var m = date.getMonth()+1;
+	var da = date.getDate();
+	var h = date.getHours();
+	var min = date.getMinutes();
+	var s = date.getSeconds();
+	var nowday = y +"-"+m +"-"+da ;
+	var nowtime =  toTwo(h) +":"+toTwo(min) +":"+toTwo(s) ;
+	var inalert = document.querySelector(".con-alert");
+	var inalertp = document.querySelector(".al-dec1");
+	var sure = document.querySelector(".al-dec2");
+	sure.onclick = function (){
+      	inalert.style.display = 'none';
+	}
+	//验证是否为空和字数小于 100个字
+   if(message==""){
+     inalert.style.display = 'block';
+     inalertp.innerHTML = "请输入内容吧!";
+
+     return false;
+   }
+   if(message.length>100){
+   	inalert.style.display = 'block';
+    inalertp.innerHTML = "字数不能超过100个!";
+    return false;
+   }
+   
+  // 存储数据
+	saveMessage(message,nowday,nowtime);
+	 // 提示框显示
+	inalert.style.display = "block";
+     inalertp.innerHTML = "留言成功!";
+	 // 清除表单
+	 myform.reset();
+	 
+	 //提示框消失
+     
+
+	 setTimeout(aotoNone,3000);
+
+    function aotoNone(){
+      inalert.style.display = "none";
+    }
+
+
+
+
+}
 
 
 
@@ -79,3 +146,50 @@ navbtn.onclick = function() {
 function getId(id){
 	return document.getElementById(id);
 }
+
+//时间对象处理
+ function  toTwo(date) {
+   return  date < 10 ?  "0"+date :date;
+ }
+
+ /*数据存储  josn*/
+function saveMessage (message,nowday,nowtime){
+ messageRef. push({
+        message : message,
+        nowday : nowday,
+        nowtime : nowtime
+     });
+}
+// 获取数据 
+messageRef.orderByKey().limitToLast(5).on('value',function (snapshot){
+	  // console.log(snapshot.key());
+	   //console.log(snapshot.val());
+	   // console.log("the previous key is",prev)
+	var getarr= snapshot.val();
+	var getpu=[];
+	for(i in getarr){
+	   getpu.push({
+	    mg:getarr[i].message,
+	    da:	getarr[i].nowday,
+	    dd:	getarr[i].nowtime
+	   })
+	   }
+	var showmg = getpu.reverse();
+	/*最新数据倒叙 添加内容*/
+	var str= '';
+	for(i in showmg ){
+	//console.log(showmg[i].mg);
+	str +=` 
+	      <li class="clearfix new-li">  
+	         <p class=" fl use-cont">
+	         	${showmg[i].mg}
+	         </p>
+	          <p class="fr new-right">${showmg[i].da}<br>
+	             ${showmg[i].dd}
+	          </p>
+	     </li>
+	`;
+	}
+
+	getId("newlist").innerHTML = str;
+});

@@ -44,7 +44,7 @@
        <div class="clearfix nav-inner">
        	      <p class="fl">Resume</p>
           <!-- 导航菜单 -->
-             <ul class="clearfix fl nav-list" id="navlist">
+             <ul class="clearfix fr nav-list" id="navlist">
                <li class="fl"><a href="#">首页</a></li>
                <li class="fl"><a href="#"> 我</a></li>
                <li class="fl"><a href="#">能力</a></li>
@@ -178,16 +178,16 @@
 	<!--  Contact -->
 	<div class="in-layout contact-me">
         <h3 class="in-title">留言<span></span></h3>
-        <form action="" class=" con-form">
-	      	 <textarea name="message" rows="4" id="message" placeholder="请开始你的表演......" class="con-area"></textarea>
+        <form action="" class=" con-form" id="myform">
+	      	 <textarea name="message" rows="4" id="message" placeholder="请开始你的表演......" class="con-area"  maxlength="100"></textarea>
             <p class="clearfix  con-par">
-              <button type="submit" class="fr con-btn">留言</button>
+              <button type="submit" class="fr con-btn" id="sbtn">留言</button>
             </p>
         </form>
-         <h3 class="con-nt">最新评论</h3>
+         <h3 class="con-nt">最新留言记录(5)</h3>
          <hr>
-          <ul class="new-list">
-            
+          <ul class="new-list" id="newlist">
+            <!-- 
              <li class="clearfix new-li">  
                  <p class=" fl use-cont">
                  	你这个简历好屌啊
@@ -195,11 +195,25 @@
                   <p class="fr new-right">2017-12-12<br>
                      18:21:20
                   </p>
-             </li>
+             </li> -->
 
               
           </ul>
 	</div>
+
+  <div class="con-alert">
+      <h3 class="al-title">温馨提示</h3>
+      <p class="al-dec1">a</p>
+      <button class="al-dec2">确定</button>
+  </div>
+
+
+
+
+
+
+
+
 	<!--  Contact END -->
  <!-- footer -->
     <div class="in-footer">
@@ -216,5 +230,7 @@
 <!-- right-side END-->
    
 </body>
+<!-- 数据库 -->
+<script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"></script>
 <script src="index/js/index.js"></script>
 </html>
