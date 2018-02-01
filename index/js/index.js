@@ -1,5 +1,5 @@
 /*nav*/
-window.onscroll=function(){
+window.onscroll = function(){
 	var topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
 	var innavTop = getId("innav").offsetTop;
 	var abmeTop = getId("aboutme").offsetTop;
@@ -27,13 +27,14 @@ window.onscroll=function(){
  }
 /*点击按钮*/
 var navbtn = getId("navbtn");
+var navlist = getId("navlist");
 var onOff = true;;
 navbtn.onclick = function() {
 	if(onOff){
-		getId("navlist").style.display = 'block';
+		navlist.style.display = 'block';
 		onOff = false;
 	}else{
-		getId("navlist").style.display = 'none';
+		navlist.style.display = 'none';
 		onOff = true;
 	}
 
@@ -77,11 +78,6 @@ var messageRef = wilddog.sync().ref("massage");
 // 添加提交事件
 var myform = getId("myform");
 myform.addEventListener("submit",submitForm);
-
-
-
-
-
 function submitForm(e){
    /*阻止默认刷新*/
     e.preventDefault();
@@ -99,46 +95,35 @@ function submitForm(e){
 	var inalert = document.querySelector(".con-alert");
 	var inalertp = document.querySelector(".al-dec1");
 	var sure = document.querySelector(".al-dec2");
-	sure.onclick = function (){
+	sure.addEventListener("click",onSure);
+	 function onSure(){
       	inalert.style.display = 'none';
 	}
 	//验证是否为空和字数小于 100个字
    if(message==""){
-     inalert.style.display = 'block';
-     inalertp.innerHTML = "请输入内容吧!";
-
+     aotoNone("block","请输入内容吧!");
      return false;
    }
    if(message.length>100){
-   	inalert.style.display = 'block';
-    inalertp.innerHTML = "字数不能超过100个!";
+   	 aotoNone("block","字数不能超过100个哦!");
     return false;
    }
    
   // 存储数据
 	saveMessage(message,nowday,nowtime);
 	 // 提示框显示
-	inalert.style.display = "block";
-     inalertp.innerHTML = "留言成功!";
+	aotoNone("block","留言成功!");
 	 // 清除表单
-	 myform.reset();
-	 
-	 //提示框消失
-     
-
-	 setTimeout(aotoNone,3000);
-
-    function aotoNone(){
-      inalert.style.display = "none";
+	 myform.reset(); 
+    //弹框
+    function aotoNone(inB,inHtml){
+      inalert.style.display = inB ;
+      inalertp.innerHTML = inHtml ;
+      setTimeout(onSure,2000);
     }
 
 
-
-
 }
-
-
-
 
 
 
