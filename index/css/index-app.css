@@ -13,7 +13,7 @@ html {
   box-sizing: border-box; }
 
 .in-title {
-  padding: 0.4rem 0;
+  padding: 1.2rem 0 0.2rem 0;
   font: bold 0.36rem/0.46rem " MicrosoftYaHei";
   text-align: center;
   text-shadow: 5px 5px 5px #FF0000; }

@@ -1,30 +1,23 @@
 /*nav*/
 window.onscroll = function(){
-	var topScroll = document.body.scrollTop;//滚动的距离,距离顶部的距离
+	var topScroll = document.documentElement.scrollTop||document.body.scrollTop;//滚动的距离,距离顶部的距离
 	var innavTop = getId("innav").offsetTop;
-	var abmeTop = getId("aboutme").offsetTop;
+
 	var h = document.documentElement.clientHeight || document.body.clientHeight ;  //窗口的可视高
 	//console.log(topScroll);
 	//console.log(h)
-	if(topScroll>innavTop){
-	// innav.style.position = 'fixed';
-	// innav.style.top = '0';
-	// innav.style.left = '0';
-	// innav.style.width = '100%';
-	// innav.style.zIndex = "9999";
+	if(topScroll>innavTop){	
     innav.style.cssText = "position:fixed;top:0; width :100%;z-index:999;";
-
-
 	//console.log(topScroll-h);
 	}
+
 	if(topScroll<h){
 	innav.style.position = 'static';
-
-	
 	 }
+     
 
   
- }
+}
 /*aboutme*/
 
 	var abmel = getId("abmel");
@@ -83,7 +76,6 @@ navbtn.onclick = function() {
 var nlarr = navlist.children;
 var flarr = document.getElementsByClassName("flarr");
 
-
 for (var i=0;i<nlarr.length; i++){
   nlarr[i].index = i;
   nlarr[i].onclick = function (){
@@ -112,9 +104,11 @@ function objto (obj){
 	    window.scrollTo(0,leader);  
 	    //判断是否到达，到达清除定时器  
 	    if(leader == target){  
-	        //console.log(1);  
+	        //console.log(1); 
+
 	        clearInterval(timer);  
 	    }  
+
 
 	  },30);
 
