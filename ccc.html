@@ -1,0 +1,147 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport"  
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <title>demo</title>  
+    <style>  
+        *{  
+            padding: 0;  
+            margin: 0;  
+        }  
+        body ,html{  
+            height: 100%;  
+        }  
+        ul,ol{  
+            list-style: none;  
+        }  
+        ul{  
+            height: 100%;  
+            text-align: center;  
+            line-height: 50;  
+        }  
+        ul li {  
+            height: 100%;  
+        }  
+        ol{  
+            position: fixed;  
+            bottom: 100px;  
+            right: 120px;  
+        }  
+        ol  li{  
+            width: 50px;  
+            height: 50px;  
+            border: 1px solid #000;  
+            line-height: 50px;  
+            text-align: center;  
+            margin-top: -1px;  
+            cursor: pointer;  
+        }  
+  
+    </style>  
+    <script>  
+        window.onload = function () {  
+            var ul = document.getElementsByTagName("ul")[0];  
+            var  ol = document.getElementsByTagName("ol")[0];  
+            var olarr = ol.children;  
+            var ularr = ul.children;  
+            var colorArr = ["#fada8d","#03263a","#b3a896","#de7d2c","#14446a"];  
+            var target = 0;  
+            var timer = null;  
+            var leader = 0;  //  滚动条初始变换
+            for (var i = 0;i<olarr.length;i++){  
+                ularr[i].style.backgroundColor = colorArr[i];  
+                olarr[i].style.backgroundColor = colorArr[i];  
+  
+  
+                // 绑定索引值  
+                olarr[i].index = i;  
+                // 循环绑定事件  
+                olarr[i].onclick = function () {  
+                    //获取目标位置  
+                    target = ularr[this.index].offsetTop;  
+                //     清除定时器  
+                    clearInterval(timer);  
+                //    设置定时器  
+                    timer = setInterval(function () { 
+                    console.log(leader) ;
+                        var speed = (target-leader)/10;  
+                        // 判断方向  
+                        speed = speed>0?Math.ceil(speed):Math.floor(speed);  
+                        //下一步到的位置  
+                        leader = leader+speed;  
+                        //移动  
+                        window.scrollTo(0,leader);  
+                        //判断是否到达，到达清除定时器  
+                        if(leader == target){  
+                            console.log(1);  
+                            clearInterval(timer);  
+                        }  
+                    },30) ;
+
+
+
+                }  
+            }  
+            window.onscroll = function () {  
+                leader = scroll().top  
+                console.log(leader)
+            }  
+
+
+            // 缓动动画封装  
+            function animate(obj, target) {  
+                clearInterval(obj.timer);  
+                obj.timer = setInterval(function () {  
+                    var step = (target - obj.offsetTop) / 10;  
+                    step = step > 0 ? Math.ceil(step) : Math.floor(step);  
+                    obj.style.top = obj.offsetTop + step + "px";  
+                    console.log(1);  
+                    if (Math.abs(target - obj.offsetTop) < Math.abs(step)) {  
+                        obj.style.top = target + "px";  
+                        clearInterval(obj.timer);  
+                    }  
+                }, 25);  
+            }  
+            // scroll的封装  
+            function scroll() {  
+                return {  
+                    "top": window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop,  
+                    "left": window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft  
+                }  
+            }  
+                 
+
+
+
+
+
+
+
+
+
+                 
+  
+        }  
+    </script>  
+</head>  
+<body>  
+    <ul>  
+        <li>Test</li>  
+        <li>Test</li>  
+        <li>Test</li>  
+        <li>Test</li>  
+        <li>Test</li>  
+    </ul>  
+    <ol>  
+        <li>1</li>  
+        <li>2</li>  
+        <li>3</li>  
+        <li>4</li>  
+        <li>6</li>  
+    </ol>  
+  
+</body>  
+</html>  

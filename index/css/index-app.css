@@ -85,20 +85,15 @@ html {
       display: none;
       float: none; }
       .indec-nav .nav-inner .nav-list li {
-        float: none; }
-        .indec-nav .nav-inner .nav-list li a {
-          display: inline-block;
-          padding: 0 0.2rem;
-          font-size: 0.28rem;
-          color: #fff; }
-        .indec-nav .nav-inner .nav-list li a:hover {
-          font-size: 0.28rem;
-          color: #E87E04; }
+        float: none;
+        padding: 0 0.2rem;
+        text-align: center;
+        font-size: 0.28rem;
+        color: #fff; }
       .indec-nav .nav-inner .nav-list li:hover {
-        background: #30455a; }
-        .indec-nav .nav-inner .nav-list li:hover a {
-          font-size: 0.38rem;
-          color: #E87E04; }
+        background: #30455a;
+        font-size: 0.38rem;
+        color: #E87E04; }
     .indec-nav .nav-inner .nav-btn {
       position: absolute;
       right: 2%;

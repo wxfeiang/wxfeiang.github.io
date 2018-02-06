@@ -82,17 +82,16 @@
       margin: 0 5% 0 0;
       width: 50%;
       text-align: center; }
-      .indec-nav .nav-inner .nav-list li a {
-        display: inline-block;
+      .indec-nav .nav-inner .nav-list li {
         padding: 0 20px;
         font-size: 18px;
         color: #fff; }
-      .indec-nav .nav-inner .nav-list li a:hover {
+      .indec-nav .nav-inner .nav-list li:hover {
+        background: #30455a;
         font-size: 28px;
         color: #E87E04;
-        animation: flashl 0.5s linear; }
-      .indec-nav .nav-inner .nav-list li:hover {
-        background: #30455a; }
+        animation: flashl 0.5s linear;
+        cursor: pointer; }
     .indec-nav .nav-inner .nav-btn {
       display: none;
       color: #fff; }
