@@ -82,6 +82,8 @@
     color: #fff; }
     .indec-nav .nav-inner p {
       margin: 0 2%; }
+      .indec-nav .nav-inner p a {
+        color: #fff; }
     .indec-nav .nav-inner .nav-list {
       margin: 0 5% 0 0;
       width: 50%;
@@ -133,11 +135,22 @@
 .skill-me {
   background: url("../image/in-app_03.jpg") no-repeat center center;
   /* flash */ }
-  .skill-me .skill-dip {
-    display: table-cell;
-    padding: 0 2%;
-    vertical-align: middle;
-    font: 20px/40px "MicrosoftYaHei"; }
+  .skill-me .skil-lyout {
+    padding: 30px 0 20px; }
+    .skill-me .skil-lyout .skill-dip {
+      display: table-cell;
+      padding: 0 2%;
+      vertical-align: middle;
+      font: 20px/40px "MicrosoftYaHei"; }
+    .skill-me .skil-lyout .me-canvas {
+      position: relative;
+      width: 25%;
+      text-align: center;
+      font: bold 20px/26px " MicrosoftYaHei"; }
+      .skill-me .skil-lyout .me-canvas span {
+        position: absolute;
+        left: 44%;
+        top: 35%; }
 
 /* expre-me */
 .expre-me {

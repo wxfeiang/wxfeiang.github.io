@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* date: 2018.01-01 authour: 王鹏 */
+/* PC */
+/* me-layout */
+html {
+  background: url("../image/in-app_01.jpg") no-repeat center top; }
+
+.me-layout {
+  margin: 0 auto;
+  padding: 0 25px;
+  width: 546px;
+  font: 16px/24px "MicsoftYaHei";
+  background: #fff; }
+
+.me-theme {
+  text-align: center;
+  font: bold 22px/40px "MicsoftYaHei"; }
+
+.me-title {
+  font: bold 16px/20px "MicsoftYaHei"; }
+
+hr {
+  border-bottom: 1px solid #000; }
+
+.me-list {
+  padding: 0 20px; }
+  .me-list li {
+    width: 50%;
+    font: 14px/32px "MicsoftYaHei"; }
+
+.me-skill li span:nth-child(2) {
+  padding: 0 20px; }
+.me-skill li span {
+  font-weight: bold; }
+
+.me-side {
+  position: fixed;
+  right: 0;
+  top: 200px; }
+
+/*# sourceMappingURL=resume.css.map */

@@ -2,6 +2,7 @@
 window.onscroll = function(){
 	var topScroll = document.documentElement.scrollTop||document.body.scrollTop;//滚动的距离,距离顶部的距离
 	var innavTop = getId("innav").offsetTop;
+   var slillTop = getId("skill-me").offsetTop;
 
 	var h = document.documentElement.clientHeight || document.body.clientHeight ;  //窗口的可视高
 	//console.log(topScroll);
@@ -15,6 +16,13 @@ window.onscroll = function(){
 	innav.style.position = 'static';
 	 }
      
+   if(topScroll>slillTop){
+   	yuan();
+   }
+
+
+
+
 
   
 }
@@ -55,13 +63,12 @@ window.onscroll = function(){
  /* app 下点击效果*/
 var navbtn = getId("navbtn");
 var navlist = getId("navlist");
-var onOff = true;;
+var onOff = true;
 navbtn.onclick = function() {
 	if(onOff){
 		navlist.style.display = 'block';
          navlist.onclick = function(){
           navlist.style.display = 'none';
-
          }
 
 		onOff = false;
@@ -110,7 +117,7 @@ function objto (obj){
 	    }  
 
 
-	  },30);
+	  },35);
 
     }
 // 首页按钮
@@ -124,9 +131,48 @@ spbtn[1].onclick = function (){
 }
 
 
+//skill 画圆
+function yuan(){
+	var me_spans = document.querySelectorAll(".me-canvas span");
+	var canvas = document.querySelectorAll(".me-canvas canvas");
+	var span_text = [];
+	    for (var i = 0; i < me_spans.length; i++) {
+	        span_text.push(360 * (parseFloat(me_spans[i].innerHTML) / 100) - 90)
+	    }
+	//console.log(span_text);
+
+		for (var r = 0; r < canvas.length; r++) {
+	         var canvas_width = canvas[r].width;
+	           //console.log(canvas_width)
+	        circle(canvas[r], span_text[r], canvas_width);
+		}
+	   // 画圆动画
+	   function circle(item, text, width) {
+	    var ctx = item.getContext("2d");
+	    ctx.beginPath();
+	    ctx.arc(width / 2, width / 2, width / 2.5, 0 * Math.PI / 180, 360 * Math.PI / 180);
+	    ctx.lineWidth = 13;
+	    ctx.strokeStyle = "#aaa";
+	    ctx.stroke();
+	    var start = -90;
+	    var end = -90;
+	    var t = setInterval(function () {
+	        ctx.beginPath();
+	        ctx.arc(width / 2, width / 2, width / 2.5, start * Math.PI / 180, end * Math.PI / 180);
+	        end += 5;
+	        ctx.strokeStyle = "#2c3e50";
+	        ctx.stroke();
+	        if (end >= text) {
+	            clearInterval(t);
+	            t = null;
+	        }
+	    }, 30);
+	  }
 
 
-   
+}
+
+
 /*contact-me*/
 //  初始化数据库对象
 var config = {
@@ -231,7 +277,6 @@ messageRef.orderByKey().limitToLast(5).on('value',function (snapshot){
 function getId(id){
 	return document.getElementById(id);
 }
-
 //时间对象处理
  function  toTwo(date) {
    return  date < 10 ?  "0"+date :date;

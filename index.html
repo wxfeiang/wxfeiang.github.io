@@ -15,6 +15,7 @@
     <link href='http://cdn.webfont.youziku.com/webfonts/nomal/113374/45817/5a60cc02f629d91a785fb219.css' rel='stylesheet' type='text/css' />
    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- 有字库文件 -->
+    <link rel="stylesheet" href="index/css/animate.min.css">
     <link rel="stylesheet" href="public/css/reset.css">
     <link rel="stylesheet" href="index/css/index.min.css" media="screen and (min-width:750px)">
     <script src="index/js/index-app.js"></script>
@@ -32,11 +33,11 @@
 	          	你当前的浏览器不支持视频
 	      </video>
 	      <div class="bn-cont">
-               <h2 class="cssfaf4632221bade ba-title">Hello, this is my Resume !</h2>
-               <h3 class="ba-stite">一位极具潜力的Web前端工程师</h3>
+               <h2 class="wow rubberBand cssfaf4632221bade ba-title">Hello, this is my Resume !</h2>
+               <h3 class="wow fadeInDownBig ba-stite">一位极具潜力的Web前端工程师</h3>
                 <p class= "ba-sbtn">
-                    <span class="bn-sp">关于我</span>
-                    <span>我的案例</span>
+                    <span class=" wow fadeInUpBig bn-sp">关于我</span>
+                    <span class=" wow fadeInUpBig " data-wow-delay="0.5s">我的案例</span>
                 </p>
 	      </div>     
 	</div>
@@ -44,7 +45,7 @@
 	<!-- nav -->
 	<div class=" indec-nav" id="innav">
        <div class="clearfix nav-inner">
-       	      <p class="fl">Resume</p>
+       	      <p class="fl"><a href="https://github.com/wxfeiang" target="_black">Resume</a></p>
           <!-- 导航菜单 -->
              <ul class="clearfix fr nav-list" id="navlist">
                <li class="fl">首页</li>
@@ -62,16 +63,16 @@
 	<!-- nav END-->
 	<!-- aboutme -->
 	<div class="about-me in-layout flarr" id="aboutme">
-       <h3 class="in-title">关于我<span></span></h3>
+       <h3 class="wow flash in-title">关于我<span></span></h3>
        <div class="clearfix about-dic">
-	       <ul class="fl ab-list" id="abmel">
+	       <ul class="wow fadeInLeftBig fl ab-list"   id="abmel">
 	       <!--   <li><i class="fa fa-user"></i> &nbsp王鹏</li>
 	         <li><i class="fa fa-location-arrow" ></i> &nbsp1993-11</li>
 	         <li><i class="fa fa-bolt"></i></i> &nbsp北京市</li>
 	         <li><i class="fa fa-envelope"></i><a href="mailto:wxfeiang@foxmail.com"> &nbspwxfeiang@foxmail.com</a></li>
 	         <li><i class="fa fa-phone"></i><a href="tel:18309469751"> &nbsp18309469751</a></li> -->
 	       </ul>
-	       <div class="fr ab-list" id="abmer">
+	       <div class="wow fadeInRightBig  fr ab-list" id="abmer">
 	          <!-- <h3 class="right-title">关于我</h3>
 			   <p class="right-dec">在前端开发工作中，让我变得更有耐心，思维更活跃， 也培养了我独立思考和自主学习的能力，在压力和困难面前我有很好的分析能力和解决问题的能力。 我更是一位富有团队精神的人，能够相互协作和充分的沟通。谋求公司的<span>Web前端开发<span>职位。
 			   </p>  -->
@@ -80,10 +81,10 @@
 	</div>
 	<!-- aboutme  END-->
 	<!-- skill  -->
-    <div class="skill-me in-layout flarr">
-    	<h3 class="in-title">能力<span></span></h3>
-    	<div class="in-lyoud ">
-			<p class="skill-dip">
+    <div class="skill-me in-layout flarr" id= "skill-me">
+    	<h3 class="wow flash  in-title">能力<span></span></h3>
+    	<div class=" clearfix in-lyoud skil-lyout">
+			<!-- <p class="skill-dip">
 			1、熟悉 HTML/HTML5、CSS/CSS3、JavaScript、Ajax等前端开发语言。<br>
 			2、熟练使用Photoshop、Dreamweaver、WebStorm、等开发工具及SVN代码管理工具。<br>
 			3、熟练运用Bootstrap、jQuery、Angular JS、jQuery Mobile等主流前端框架。<br>
@@ -91,22 +92,48 @@
 			5、了解PHP、MySQL、等后端或服务器语言。<br>
 			6、能够手写DIV+CSS制作出符合网页标准化的静态网页原型HTML，兼容IE8/IE9/火狐/Chrome等主流浏览器并能迅速定位和解决技术问题。<br>
 			7、阅读和分析过部分框架源码（jQuery、Bootstrap） 。<br>
-			</p>
+			</p> -->
+          
+             <div class="wow fadeInLeft fl me-canvas">
+                <span>85%</span>
+                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+                <p>DIV + CSS</p>
+             </div>
+           
+           <div class="wow fadeInDown fl me-canvas">
+                <span>80%</span>
+                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+                <p>Js + jQuery</p>
+             </div>
+
+            <div class="wow fadeInUp fl me-canvas">
+                <span>80%</span>
+                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+                <p>DIV + CSS</p>
+             </div>
+           
+           <div class="wow fadeInRight fl me-canvas">
+                <span>60%</span>
+                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+                <p>DIV + CSS</p>
+             </div>
+
+
     	</div>
     </div>
 	<!-- skill  END-->
 	<!-- expre -->
 	<div class="expre-me in-layout flarr">
-       <h3 class="in-title">经历<span></span></h3>
+       <h3 class="wow flash  in-title">经历<span></span></h3>
   
 	       <ul class="exper-list ">
-	       	<li class="clearfix exper-box">
-	             <div class="fr expre-l1">
+	       	<li class="wow bounceInDown clearfix exper-box">
+	             <div class=" fr expre-l1">
 	                20/3- 2017<br>
 	                  --<br>
 	                16/12- 2017<br>
 	             </div>
-	              <div class="expre-l2">
+	              <div class="wow bounceInLeft expre-l2">
 	                 <h4 class="l3-title">甘肃指控科技有限公司</h4>
                      <span>主要职责</span><br>
 	                 根据产品设计需求，进行前端页面开发，利用原生JS，JQuery框架实现页面中的交互效果，与后端进行交互对后端给的接口进行按需处理，配合后端工程师完成项目开发。      <br>
@@ -114,13 +141,13 @@
 
 
 	       	</li>
-	       	<li class="clearfix exper-box box-l2">
+	       	<li class="wow bounceInUp  clearfix exper-box box-l2">
 	             <div class="fr expre-l1 epr-l2">
 	                05/10- 2015<br>
 	                  --<br>
 	                10/01- 2017<br>
 	             </div>
-	              <div class="expre-l2 epr-l3">
+	              <div class="wow bounceInRight expre-l2 epr-l3">
 	                 <h4 class="l3-title">甘肃指控科技有限公司</h4>
                      <span>主要职责</span><br>
 	                 网络安防与维护<br>
@@ -133,17 +160,17 @@
 	<!-- expre END -->
 	<!-- demo -->
 	<div class="in-layout demo-me flarr">
-         <h3 class="in-title">案例<span></span></h3>
+         <h3 class="wow flash  in-title">案例<span></span></h3>
          <div class="in-lyoud demo-layout">
 	          <div class="demo-box">
-		             <div class="demo-dic">
+		             <div class="wow slideInLeft demo-dic">
 		               <div class="demo-bl">
                           <img src="index/image/demo1.jpg" alt="案例图片" >
 		               </div>
 		               <div class="demo-no"> 这是一个透明层</div>
 
 		             </div>
-		            <div class="demo-dic">
+		            <div class="wow slideInDown demo-dic">
 		               <div class="demo-bl">
 		               	<img src="index/image/demo2.jpg" alt="案例图片">
 
@@ -151,7 +178,7 @@
 		               <div class="demo-no"> 这是一个透明层</div>
 
 		             </div>
-		            <div class="demo-dic">
+		            <div class="wow slideInUp demo-dic">
 		               <div class="demo-bl">
 		               	<img src="index/image/demo3.jpg" alt="案例图片" >
 
@@ -159,7 +186,7 @@
 		               <div class="demo-no"> 这是一个透明层</div>
 
 		            </div>
-		            <div class="demo-dic">
+		            <div class="wow slideInRight demo-dic">
 		               <div class="demo-bl">
 		               
 		               	<img src="index/image/demo4.jpg" alt="案例图片" >
@@ -178,9 +205,9 @@
 	<!-- demo- END -->
 	<!--  Contact -->
 	<div class="in-layout contact-me flarr">
-        <h3 class="in-title">留言<span></span></h3>
-        <form action="" class=" con-form" id="myform">
-	      	 <textarea name="message" rows="4" id="message" placeholder="请开始你的表演......" class="con-area"  maxlength="100"></textarea>
+        <h3 class="wow flash  in-title">留言<span></span></h3>
+        <form action="" class="con-form" id="myform">
+	      	 <textarea name="message" rows="4" id="message" placeholder="请开始你的表演......" class="wow flash con-area"  maxlength="100"></textarea>
             <p class="clearfix  con-par">
               <button type="submit" class="fr con-btn" id="sbtn">留言</button>
             </p>
@@ -197,8 +224,6 @@
                      18:21:20
                   </p>
              </li> -->
-
-              
           </ul>
 	</div>
   <!-- alert -->
@@ -219,26 +244,44 @@
  <!-- footer END-->
      
 <!-- right-side -->
-   <!-- <div></div> -->
+   <div>
+  
+    	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">QQ</a>
+    	<a href="">微信</a>
+    	<a href="">github</a>
+    	<a href="">下载</a>
+    	<a href="">返回顶部</a>
+
+
+   </div>
 <!-- right-side END-->
    
 </body>
 <!-- 数据库 -->
 <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"></script>
 <script src="index/js/index.js"></script>
+ <script src="index/js/wow.min.js"></script>
+<script>
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+        new WOW().init();
+    }
+</script>
 <!-- 百度自动推广 -->
 <script>
-	(function(){
-	    var bp = document.createElement('script');
-	    var curProtocol = window.location.protocol.split(':')[0];
-	    if (curProtocol === 'https') {
-	        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-	    }
-	    else {
-	        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-	    }
-	    var s = document.getElementsByTagName("script")[0];
-	    s.parentNode.insertBefore(bp, s);
-	})();
+	<script>
+		(function(){
+		    var bp = document.createElement('script');
+		    var curProtocol = window.location.protocol.split(':')[0];
+		    if (curProtocol === 'https') {
+		        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+		    }
+		    else {
+		        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+		    }
+		    var s = document.getElementsByTagName("script")[0];
+		    s.parentNode.insertBefore(bp, s);
+		})();
+</script>
+
 </script>
 </html>
