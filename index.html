@@ -13,6 +13,7 @@
 	<title>王鹏个人栈</title>
     <!-- 文件引入 -->
     <link href='http://cdn.webfont.youziku.com/webfonts/nomal/113374/45817/5a60cc02f629d91a785fb219.css' rel='stylesheet' type='text/css' />
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/113374/45410/5a9166b8f629d911e0099408.css' rel='stylesheet' type='text/css' />
    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- 有字库文件 -->
     <link rel="stylesheet" href="index/css/animate.min.css">
@@ -45,7 +46,17 @@
 	<!-- nav -->
 	<div class=" indec-nav" id="innav">
        <div class="clearfix nav-inner">
-       	      <p class="fl"><a href="https://github.com/wxfeiang" target="_black">Resume</a></p>
+       	      <p class="fl"><a href="https://github.com/wxfeiang" target="_black">GItHub</a></p>
+
+ <!-- music -->
+         <p class="fr im-muic">
+         	<img src="index/image/ico-music.png" width="26" hright="26" class="im-pic" id="im-pic">
+         </p>
+         <audio autoplay loop id="me-music">
+		  <source src="http://m128.xiami.net/158/7158/2103512775/1801681464_1517538016212.mp3?auth_key=1520046000-0-0-9e1f2660e97cf64932acca6e07968737" type="audio/mpeg">
+		   您的浏览器不支持 audio 元素。
+		</audio>
+
           <!-- 导航菜单 -->
              <ul class="clearfix fr nav-list" id="navlist">
                <li class="fl">首页</li>
@@ -58,6 +69,10 @@
 
 		 <!-- 按钮 -->
 		   <div class="fr nav-btn" id="navbtn"><i class="fa fa-bars" ></i></div>
+		
+
+        
+
       </div> 
 	</div>
 	<!-- nav END-->
@@ -84,39 +99,32 @@
     <div class="skill-me in-layout flarr" id= "skill-me">
     	<h3 class="wow flash  in-title">能力<span></span></h3>
     	<div class=" clearfix in-lyoud skil-lyout">
-			<!-- <p class="skill-dip">
-			1、熟悉 HTML/HTML5、CSS/CSS3、JavaScript、Ajax等前端开发语言。<br>
-			2、熟练使用Photoshop、Dreamweaver、WebStorm、等开发工具及SVN代码管理工具。<br>
-			3、熟练运用Bootstrap、jQuery、Angular JS、jQuery Mobile等主流前端框架。<br>
-			4、可以使用js原生态代码编写网页业务逻辑，能使用HTML5编写移动端自适应的网页。<br>
-			5、了解PHP、MySQL、等后端或服务器语言。<br>
-			6、能够手写DIV+CSS制作出符合网页标准化的静态网页原型HTML，兼容IE8/IE9/火狐/Chrome等主流浏览器并能迅速定位和解决技术问题。<br>
-			7、阅读和分析过部分框架源码（jQuery、Bootstrap） 。<br>
-			</p> -->
-          
-             <div class="wow fadeInLeft fl me-canvas">
-                <span>85%</span>
-                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
-                <p>DIV + CSS</p>
-             </div>
-           
-           <div class="wow fadeInDown fl me-canvas">
-                <span>80%</span>
-                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
-                <p>Js + jQuery</p>
-             </div>
+	      <p class="wow flipInX st-skill">
+	          前端的知识面非常广泛,吃透它需要具有持之以恒的精神。而在前端开发的学习工作中，重中之重就是对于原生javascript的理解和把握，从而在此基础上学习新的框架（JQuery、Bootstrap、Vue、Node等）。
+	       </p>
+         <div class="wow fadeInLeft fl me-canvas">
+            <span>85%</span>
+            <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+            <p>HTML + CSS</p>
+         </div>
+       
+       <div class="wow fadeInDown fl me-canvas">
+            <span>80%</span>
+            <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+            <p>Js + jQuery</p>
+         </div>
 
-            <div class="wow fadeInUp fl me-canvas">
-                <span>80%</span>
-                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
-                <p>DIV + CSS</p>
-             </div>
-           
-           <div class="wow fadeInRight fl me-canvas">
-                <span>60%</span>
-                <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
-                <p>DIV + CSS</p>
-             </div>
+        <div class="wow fadeInUp fl me-canvas">
+            <span>80%</span>
+            <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+            <p>AJAX + Bootstrap</p>
+         </div>
+       
+       <div class="wow fadeInRight fl me-canvas">
+            <span>75%</span>
+            <canvas width="150" height="150">你的浏览器不支持高级脚本</canvas>
+            <p>Vue.js + AnjularJs...</p>
+         </div>
 
 
     	</div>
@@ -200,6 +208,7 @@
 		            </div>
 
 	          </div>
+	          <p class="st-demo">更多案例 正在更新.......</p>
         </div>  
 	</div>
 	<!-- demo- END -->
@@ -235,23 +244,44 @@
  <!--  Contact END -->
  <!-- footer -->
     <div class="in-footer">
-        <p class="fter-dec">
-	         F12（command+option+J）有彩蛋<br>
-			 All Rights Reserved<br>
-			蜀ICP备15021330号 Copyright © 2015 - <span>2017<span><br>
+        <h2 class="fter-dec">
+	         勤奋 好学 百炼成钢
+	     </h2>
+        <p  class= "fter-sp">
+           <span >DILIGENT</span>
+           <span >STUDIOUS</span>
+           <span >TEMPERED INTO A STEEL</span>
         </p>
+
+        <p class="fter-tag">
+            前端开发是一个反馈周期较短的工作<br>
+			它的喜怒哀乐全部表现在端口<br>
+			正因为如此才会带给我不断的成就感和不满足的上进心<br>
+			带上我吧，一起去发现更大的世界<br>
+        </p>
+
     </div>
  <!-- footer END-->
      
 <!-- right-side -->
-   <div>
+   <div class="right-side">
   
-    	<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=&site=qq&menu=yes">QQ</a>
-    	<a href="">微信</a>
-    	<a href="">github</a>
-    	<a href="">下载</a>
-    	<a href="">返回顶部</a>
-
+    	<a a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=12345678&site=qq&menu=yes" title="点击QQ找我">
+    		<img src="index/image/ico-qq.png" >
+    	</a>
+    	<a href="javaScript:;" class="chart" title="扫描二维码加我微信哦!">
+			<img src="index/image/ico-wechat.png" >
+	        <img src="index/image/chatt-er.jpg" class="chart-er" alt="二维码加我">
+    	</a>
+    	<a href="https://github.com/wxfeiang" target="_black" title="我的github">
+    		<img src="index/image/ico-github.png">
+    	</a>
+    	<a href="index/resume.html" title="pdf简历下载">
+    		<img src="index/image/ico-down.png" >
+    	</a>
+    	<a href="javaScript:;" id="me-top" title="返回顶部">
+    		<img src="index/image/ico-top.png">
+    	</a>
 
    </div>
 <!-- right-side END-->
@@ -260,7 +290,7 @@
 <!-- 数据库 -->
 <script src="https://cdn.wilddog.com/sdk/js/2.5.17/wilddog.js"></script>
 <script src="index/js/index.js"></script>
- <script src="index/js/wow.min.js"></script>
+<script src="index/js/wow.min.js"></script>
 <script>
     if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
         new WOW().init();
@@ -268,7 +298,7 @@
 </script>
 <!-- 百度自动推广 -->
 <script>
-	<script>
+	
 		(function(){
 		    var bp = document.createElement('script');
 		    var curProtocol = window.location.protocol.split(':')[0];
@@ -281,7 +311,7 @@
 		    var s = document.getElementsByTagName("script")[0];
 		    s.parentNode.insertBefore(bp, s);
 		})();
-</script>
+
 
 </script>
 </html>

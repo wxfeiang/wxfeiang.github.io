@@ -79,6 +79,12 @@ html
       float: none
       a
         color: #fff
+    .im-muic
+      position: absolute
+      top: 0
+      right: 20%  
+      .im-pic
+        animation: flashl 5s linear infinite         
     .nav-list
       display: none
       float: none
@@ -132,11 +138,10 @@ html
   background: url("../image/in-app_03.jpg") no-repeat center center
   .skil-lyout
     padding: 0.3rem 0  0.2rem
-    .skill-dip
-      display: table-cell
-      padding: 0 2%
-      vertical-align: middle
-      font: 0.2rem/0.4rem "MicrosoftYaHei"
+    .st-skill
+      padding: 0.2rem 0
+      font: 0.18rem/0.36rem " MicrosoftYaHei"
+      text-align: center
     .me-canvas
       position: relative
       margin: 0 0 0.2rem 0
@@ -218,7 +223,12 @@ html
         background: rgba(0,0,0,0.8)
         text-align: center
         color: #fff
-        
+
+  .st-demo     
+    margin: 0.2rem 0 0 0
+    text-align: center 
+    font: 0.18rem/0.36rem " MicrosoftYaHei"
+    border-top: 1px dashed yellow      
   .demo-dic:hover
     .demo-no
       transform: rotateX(0deg)
@@ -277,10 +287,22 @@ html
 
 /* footer */
 .in-footer
+  padding: 0 10%
   background: url("../image/in-app_07.jpg") no-repeat center center
-  padding: 0.20rem 
   text-align: center
-  font: 0.30rem/0.40rem "MicsoftYaHei"
+  font:  0.16rem/0.36rempx "MicsoftYaHei"
+  color: #fff
+  .fter-dec
+    font: bold 0.22rem/0.40rem "MicsoftYaHei"
+  .fter-sp
+    text-shadow: 5px 5px 2px #656565
+    font: 0.18rem/0.60rem 'HoangYen11'
+    span:nth-child(1) 
+      color: red
+    span:nth-child(2) 
+      color: green
+    span:nth-child(3) 
+      color: blue
 
 /* alert */
 .con-alert
@@ -303,4 +325,6 @@ html
     font: bold 0.18rem/0.9rem "MicsoftYaHei"
   .al-dec2
     font: bold 0.16rem/0.26rem "MicsoftYaHei"  
-    
+/* .right-side */
+.right-side
+  display: none

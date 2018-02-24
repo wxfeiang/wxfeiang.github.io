@@ -1,31 +1,59 @@
+/*查看提示*/
+console.log('Hi! 朋友，感谢您愿意调试简历代码。如果您有什么看法请指点我...');
+
 /*nav*/
 window.onscroll = function(){
 	var topScroll = document.documentElement.scrollTop||document.body.scrollTop;//滚动的距离,距离顶部的距离
 	var innavTop = getId("innav").offsetTop;
-   var slillTop = getId("skill-me").offsetTop;
-
 	var h = document.documentElement.clientHeight || document.body.clientHeight ;  //窗口的可视高
 	//console.log(topScroll);
 	//console.log(h)
+	//导航栏置顶
 	if(topScroll>innavTop){	
     innav.style.cssText = "position:fixed;top:0; width :100%;z-index:999;";
 	//console.log(topScroll-h);
 	}
-
 	if(topScroll<h){
 	innav.style.position = 'static';
 	 }
-     
-   if(topScroll>slillTop){
-   	yuan();
+    // 画圆
+   if(flarr[2].offsetTop<topScroll<flarr[3].offsetTop){
+   	  yuan();
    }
+   //  返回顶部按钮 出现
+   if(flarr[1].offsetTop<topScroll){    
+	    goTop.style.display = 'block';
+	}else{
+	  	goTop.style.display = 'none';
+	}
+  //每次屏幕滑动，把屏幕卷去的头部赋值给leader,模拟获取显示区域距离顶部的距离  
+   leader = scroll().top;  
 
-
-
-
-
-  
+ 
 }
+
+
+/*music*/
+var myMusic = getId("me-music");
+var mypic = getId("im-pic");
+mypic.onclick = function(){
+
+  if(onOff){
+     this.className = "";
+     myMusic.pause(); // 音乐暂停
+     this.src= 'index/image/ico-musicz.png';
+     onOff = false;
+  }else{
+     this.className = "im-pic";
+      myMusic.play(); // 音乐继续
+     this.src= 'index/image/ico-music.png';
+     onOff = true;
+
+  }
+
+}
+
+
 /*aboutme*/
 
 	var abmel = getId("abmel");
@@ -52,6 +80,7 @@ window.onscroll = function(){
    		 abmel.innerHTML = code.substring(0,n);
 	     abmer.innerHTML = coder.substring(0,n);
 	     n++;
+
    	   }
    	   else{
    	   	  return false;
@@ -66,12 +95,11 @@ var navlist = getId("navlist");
 var onOff = true;
 navbtn.onclick = function() {
 	if(onOff){
-		navlist.style.display = 'block';
-         navlist.onclick = function(){
+	   navlist.style.display = 'block';
+       navlist.onclick = function(){
           navlist.style.display = 'none';
-         }
-
-		onOff = false;
+       }
+	  onOff = false;
 	}else{
 		navlist.style.display = 'none';
 		onOff = true;
@@ -82,21 +110,35 @@ navbtn.onclick = function() {
 // 楼层跳转
 var nlarr = navlist.children;
 var flarr = document.getElementsByClassName("flarr");
-
 for (var i=0;i<nlarr.length; i++){
   nlarr[i].index = i;
+
   nlarr[i].onclick = function (){
-  
   objto(flarr[this.index]);
   
   }
 }
+// 首页按钮
+var spbtn = document.querySelectorAll(".ba-sbtn span");
+spbtn[0].onclick = function (){
+	objto(flarr[1]);
+}
 
-/*滚动*/
+spbtn[1].onclick = function (){
+	objto(flarr[4]);
+}
+
+/*点击返回顶部*/
+var goTop = getId("me-top");
+goTop.onclick = function(){
+  objto(flarr[0]);
+}
+/*滚动动画*/
+var leader = 0;  // 滚动条初始外置
 function objto (obj){
 	var target = 0;  // 目标位置
 	var timer = null; 
-	var leader = 0;  // 滚动条初始外置
+	
 
 	  target = obj.offsetTop;
 	  clearInterval(timer);
@@ -111,7 +153,6 @@ function objto (obj){
 	    window.scrollTo(0,leader);  
 	    //判断是否到达，到达清除定时器  
 	    if(leader == target){  
-	        //console.log(1); 
 
 	        clearInterval(timer);  
 	    }  
@@ -120,15 +161,15 @@ function objto (obj){
 	  },35);
 
     }
-// 首页按钮
-var spbtn = document.querySelectorAll(".ba-sbtn span");
-spbtn[0].onclick = function (){
-	objto(flarr[1]);
-}
 
-spbtn[1].onclick = function (){
-	objto(flarr[4]);
-}
+ function scroll() {  // 封装scrollTop  
+      return {  
+          "top": window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop,  
+          "left":  window.pageXOffset || document.body.scrollLeft || document.documentElement.scrollLeft  
+      }  
+    }   
+
+
 
 
 //skill 画圆
@@ -214,7 +255,7 @@ function submitForm(e){
    	 aotoNone("block","字数不能超过100个哦!");
     return false;
    }
-   
+  
   // 存储数据
 	saveMessage(message,nowday,nowtime);
 	 // 提示框显示

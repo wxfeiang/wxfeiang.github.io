@@ -71,6 +71,7 @@
   background: #2c3e50
   overflow: hidden 
   .nav-inner
+    position: relative
     font: 30px/60px " MicrosoftYaHei"
     text-align: center
     color: #fff
@@ -78,9 +79,13 @@
       margin: 0 2%
       a
         color: #fff
-        
+    .im-muic
+      position: absolute
+      left: 10%
+      cursor: pointer
+      .im-pic
+        animation: flashl 5s linear infinite    
     .nav-list
-      margin: 0 5% 0 0
       width: 50%
       text-align: center
       li
@@ -93,7 +98,6 @@
         color: #E87E04
         animation: flashl 0.5s linear
         cursor: pointer
-           
     .nav-btn
       display: none
       color: #fff
@@ -130,12 +134,11 @@
 .skill-me
   background: url("../image/in-app_03.jpg") no-repeat center center
   .skil-lyout
-    padding: 30px 0  20px
-    .skill-dip
-      display: table-cell
-      padding: 0 2%
-      vertical-align: middle
-      font: 20px/40px "MicrosoftYaHei"
+  
+    .st-skill
+      padding: 20px 0
+      font: 18px/26px " MicrosoftYaHei"
+      text-align: center
     .me-canvas
       position: relative
       width: 25%
@@ -223,7 +226,11 @@
         background: rgba(0,0,0,0.8)
         text-align: center
         color: #fff
-        
+  .st-demo
+    margin: 20px 0 0 0
+    text-align: center 
+    font: 18px/26px " MicrosoftYaHei" 
+    border-top: 1px dashed yellow
   .demo-dic:hover
     .demo-no
       transform: rotateX(0deg)
@@ -290,12 +297,26 @@
 .in-footer
   padding: 0 10%
   background: url("../image/in-app_07.jpg") no-repeat center center
+  text-align: center
+  font:  16px/36px "MicsoftYaHei"
+  color: #fff
   .fter-dec
-    padding: 20px 
-    height: 60px
-    text-align: center
-    font: 16px/24px "MicsoftYaHei"
+    font: bold 22px/40px "MicsoftYaHei"
+  .fter-sp
+    text-shadow: 5px 5px 2px #656565
+    font: 22px/60px 'HoangYen11'
+    span:nth-child(1) 
+      color: red
+    span:nth-child(2) 
+      color: green
+    span:nth-child(3) 
+      color: blue 
 
+
+
+
+
+    
 
 /* alert */
 
@@ -320,11 +341,42 @@
   .al-dec2
     font: bold 16px/26px "MicsoftYaHei" 
      
+         
+/* right-side */
+.right-side
+  position: fixed
+  right: 0
+  bottom: 100px
+  a
+    display: block
+    padding-top: 10px
+    width: 35px
+    height: 25px 
+    text-align: center
+    img
+      width: 15px 
+      height: 15px 
+  #me-top
+    display: none
+  .chart
+    position: relative
+    .chart-er
+      display: none
+      position: absolute
+      top: -50px 
+      right: 40px
+      width: 100px 
+      height: 100px
+
+  .chart:hover
+    .chart-er
+      display: block
+
+  a:hover
+    background: orange
     
-       
-      
+    
 
-
-
+    
  
 

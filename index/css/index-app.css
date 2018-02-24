@@ -2,289 +2,454 @@
 /* date: 2018.01-01 authour: 王鹏  */
 /* index-app */
 /* pulblic */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\000034}}
 html {
-  font-size: 100px; }
+  font-size: 100px;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\000036}}
 .in-layout {
   margin: 0 auto;
   padding: 0 10%;
   min-height: 100vh;
   overflow: hidden;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000312}}
 .in-title {
   padding: 1.2rem 0 0.2rem 0;
   font: bold 0.36rem/0.46rem " MicrosoftYaHei";
   text-align: center;
-  text-shadow: 5px 5px 5px #FF0000; }
-  .in-title span {
-    margin: 6px auto 0;
-    display: block;
-    width: 10%;
-    border-bottom: 4px solid #e87e04; }
+  text-shadow: 5px 5px 5px #FF0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000317}}
+.in-title span {
+  margin: 6px auto 0;
+  display: block;
+  width: 10%;
+  border-bottom: 4px solid #e87e04;
+}
 
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000322}}
 .in-lyoud {
-  padding: 5% 0; }
+  padding: 5% 0;
+}
 
 @keyframes flashl {
   0% {
-    transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   50% {
-    transform: rotate(180deg); }
+    transform: rotate(180deg);
+  }
   100% {
-    transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 /* top bannner */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000334}}
 .banner-hd {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: url("../image/in-app_01.jpg") no-repeat center center; }
-  .banner-hd video {
-    display: none; }
-  .banner-hd .bn-cont {
-    position: absolute;
-    top: 35%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: #2c3e50; }
-    .banner-hd .bn-cont .ba-title {
-      line-height: 0.7rem;
-      font-size: 0.35rem; }
-    .banner-hd .bn-cont .ba-stite {
-      margin: 0.4rem auto;
-      font: bold 0.3rem/0.7rem " MicrosoftYaHei"; }
-    .banner-hd .bn-cont .ba-sbtn {
-      padding: 0.2rem 0;
-      font: bold 0.26rem/0.66rem " MicrosoftYaHei"; }
-      .banner-hd .bn-cont .ba-sbtn span {
-        display: block;
-        margin: 0.4rem auto;
-        padding: 0 0.1rem;
-        width: 3.5rem;
-        border: 0.02rem solid #2c3e50;
-        border-radius: 0.05rem;
-        color: #2c3e50; }
-      .banner-hd .bn-cont .ba-sbtn span:hover {
-        color: #fff;
-        background: #2c3e50; }
+  background: url("../image/in-app_01.jpg") no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000340}}
+.banner-hd video {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000342}}
+.banner-hd .bn-cont {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #2c3e50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000349}}
+.banner-hd .bn-cont .ba-title {
+  line-height: 0.7rem;
+  font-size: 0.35rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000352}}
+.banner-hd .bn-cont .ba-stite {
+  margin: 0.4rem auto;
+  font: bold 0.3rem/0.7rem " MicrosoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000355}}
+.banner-hd .bn-cont .ba-sbtn {
+  padding: 0.2rem 0;
+  font: bold 0.26rem/0.66rem " MicrosoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000358}}
+.banner-hd .bn-cont .ba-sbtn span {
+  display: block;
+  margin: 0.4rem auto;
+  padding: 0 0.1rem;
+  width: 3.5rem;
+  border: 0.02rem solid #2c3e50;
+  border-radius: 0.05rem;
+  color: #2c3e50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000366}}
+.banner-hd .bn-cont .ba-sbtn span:hover {
+  color: #fff;
+  background: #2c3e50;
+}
 
 /* nav */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000370}}
 .indec-nav {
   background: #2c3e50;
   width: 100%;
-  overflow: hidden; }
-  .indec-nav .nav-inner {
-    position: relative;
-    font: 0.5rem/1rem " MicrosoftYaHei";
-    color: #fff; }
-    .indec-nav .nav-inner p {
-      float: none; }
-      .indec-nav .nav-inner p a {
-        color: #fff; }
-    .indec-nav .nav-inner .nav-list {
-      display: none;
-      float: none; }
-      .indec-nav .nav-inner .nav-list li {
-        float: none;
-        padding: 0 0.2rem;
-        text-align: center;
-        font-size: 0.28rem;
-        color: #fff; }
-      .indec-nav .nav-inner .nav-list li:hover {
-        background: #30455a;
-        font-size: 0.38rem;
-        color: #E87E04; }
-    .indec-nav .nav-inner .nav-btn {
-      position: absolute;
-      right: 2%;
-      top: 0;
-      display: block;
-      color: #fff; }
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000374}}
+.indec-nav .nav-inner {
+  position: relative;
+  font: 0.5rem/1rem " MicrosoftYaHei";
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000378}}
+.indec-nav .nav-inner p {
+  float: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000380}}
+.indec-nav .nav-inner p a {
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000382}}
+.indec-nav .nav-inner .im-muic {
+  position: absolute;
+  top: 0;
+  right: 20%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000386}}
+.indec-nav .nav-inner .im-muic .im-pic {
+  animation: flashl 5s linear infinite;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000388}}
+.indec-nav .nav-inner .nav-list {
+  display: none;
+  float: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000391}}
+.indec-nav .nav-inner .nav-list li {
+  float: none;
+  padding: 0 0.2rem;
+  text-align: center;
+  font-size: 0.28rem;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\0000397}}
+.indec-nav .nav-inner .nav-list li:hover {
+  background: #30455a;
+  font-size: 0.38rem;
+  color: #E87E04;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003101}}
+.indec-nav .nav-inner .nav-btn {
+  position: absolute;
+  right: 2%;
+  top: 0;
+  display: block;
+  color: #fff;
+}
 
 /* aboutme */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003108}}
 .about-me {
   overflow: hidden;
-  background: url("../image/in-app_02.jpg") no-repeat center center; }
-  .about-me .about-dic {
-    padding: 0; }
-    .about-me .about-dic .ab-list {
-      float: none;
-      margin: 1rem auto;
-      padding: 0.4rem 0.1rem 0.4rem 0.4rem;
-      border-radius: 0.1rem;
-      background: #031b1b;
-      box-shadow: 0 0 0.5rem #003259;
-      font: 0.28rem/0.56rem " MicrosoftYaHei";
-      color: #fff; }
-      .about-me .about-dic .ab-list li {
-        color: #fff;
-        font: italic 0.36rem/0.72rem " MicrosoftYaHei"; }
-        .about-me .about-dic .ab-list li a {
-          color: #fff;
-          font: italic 0.36rem/0.72rem " MicrosoftYaHei"; }
-      .about-me .about-dic .ab-list .right-title {
-        text-align: center;
-        font: bold 0.36rem/0.72rem " MicrosoftYaHei"; }
-      .about-me .about-dic .ab-list .right-dec {
-        font: 0.3rem/0.5rem " MicrosoftYaHei";
-        text-indent: 2em; }
-        .about-me .about-dic .ab-list .right-dec span {
-          color: red; }
+  background: url("../image/in-app_02.jpg") no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003111}}
+.about-me .about-dic {
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003113}}
+.about-me .about-dic .ab-list {
+  float: none;
+  margin: 1rem auto;
+  padding: 0.4rem 0.1rem 0.4rem 0.4rem;
+  border-radius: 0.1rem;
+  background: #031b1b;
+  box-shadow: 0 0 0.5rem #003259;
+  font: 0.28rem/0.56rem " MicrosoftYaHei";
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003122}}
+.about-me .about-dic .ab-list li {
+  color: #fff;
+  font: italic 0.36rem/0.72rem " MicrosoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003125}}
+.about-me .about-dic .ab-list li a {
+  color: #fff;
+  font: italic 0.36rem/0.72rem " MicrosoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003128}}
+.about-me .about-dic .ab-list .right-title {
+  text-align: center;
+  font: bold 0.36rem/0.72rem " MicrosoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003131}}
+.about-me .about-dic .ab-list .right-dec {
+  font: 0.3rem/0.5rem " MicrosoftYaHei";
+  text-indent: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003134}}
+.about-me .about-dic .ab-list .right-dec span {
+  color: red;
+}
 
 /* skill */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003137}}
 .skill-me {
-  background: url("../image/in-app_03.jpg") no-repeat center center; }
-  .skill-me .skil-lyout {
-    padding: 0.3rem 0 0.2rem; }
-    .skill-me .skil-lyout .skill-dip {
-      display: table-cell;
-      padding: 0 2%;
-      vertical-align: middle;
-      font: 0.2rem/0.4rem "MicrosoftYaHei"; }
-    .skill-me .skil-lyout .me-canvas {
-      position: relative;
-      margin: 0 0 0.2rem 0;
-      width: 50%;
-      text-align: center;
-      font: bold 0.28rem/0.4rem " MicrosoftYaHei"; }
-      .skill-me .skil-lyout .me-canvas span {
-        position: absolute;
-        left: 45%;
-        top: 40%; }
+  background: url("../image/in-app_03.jpg") no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003139}}
+.skill-me .skil-lyout {
+  padding: 0.3rem 0 0.2rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003141}}
+.skill-me .skil-lyout .st-skill {
+  padding: 0.2rem 0;
+  font: 0.18rem/0.36rem " MicrosoftYaHei";
+  text-align: center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003145}}
+.skill-me .skil-lyout .me-canvas {
+  position: relative;
+  margin: 0 0 0.2rem 0;
+  width: 50%;
+  text-align: center;
+  font: bold 0.28rem/0.4rem " MicrosoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003151}}
+.skill-me .skil-lyout .me-canvas span {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+}
 
 /* expre-me */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003157}}
 .expre-me {
-  background: url("../image/in-app_04.jpg") no-repeat center center; }
-  .expre-me .exper-list:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 1rem;
-    width: 0.04rem;
-    margin-left: -1.5px;
-    background: #fff; }
-  .expre-me .exper-list {
-    position: relative;
-    overflow: hidden; }
-    .expre-me .exper-list .exper-box .expre-l1 {
-      float: none;
-      padding: 0.4rem 0 0 0;
-      width: 2rem;
-      height: 1.6rem;
-      vertical-align: middle;
-      border-radius: 50%;
-      text-align: center;
-      background: #fff;
-      font: bold 0.24rem/0.4rem " MicrosoftYaHei";
-      animation: flashl 10s linear infinite; }
-    .expre-me .exper-list .exper-box .expre-l2 {
-      padding: 0 0.1rem 0.4rem 1.2rem;
-      text-align: left;
-      font: bold 0.28rem/0.56rem " MicrosoftYaHei";
-      color: #333; }
-      .expre-me .exper-list .exper-box .expre-l2 .l3-title {
-        font: bold 0.28rem/0.56rem " MicrosoftYaHei";
-        color: #e87d07; }
-    .expre-me .exper-list .exper-box .epr-l3 {
-      float: right;
-      text-align: left; }
+  background: url("../image/in-app_04.jpg") no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003159}}
+.expre-me .exper-list:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  width: 0.04rem;
+  margin-left: -1.5px;
+  background: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003168}}
+.expre-me .exper-list {
+  position: relative;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003172}}
+.expre-me .exper-list .exper-box .expre-l1 {
+  float: none;
+  padding: 0.4rem 0 0 0;
+  width: 2rem;
+  height: 1.6rem;
+  vertical-align: middle;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  font: bold 0.24rem/0.4rem " MicrosoftYaHei";
+  animation: flashl 10s linear infinite;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003183}}
+.expre-me .exper-list .exper-box .expre-l2 {
+  padding: 0 0.1rem 0.4rem 1.2rem;
+  text-align: left;
+  font: bold 0.28rem/0.56rem " MicrosoftYaHei";
+  color: #333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003188}}
+.expre-me .exper-list .exper-box .expre-l2 .l3-title {
+  font: bold 0.28rem/0.56rem " MicrosoftYaHei";
+  color: #e87d07;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003191}}
+.expre-me .exper-list .exper-box .epr-l3 {
+  float: right;
+  text-align: left;
+}
 
 /* demo */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003196}}
 .demo-me {
   background: url("../image/in-app_05.jpg") no-repeat center center;
-  overflow: hidden; }
-  .demo-me .demo-box {
-    overflow: hidden;
-    margin: auto 0; }
-    .demo-me .demo-box .demo-dic {
-      float: left;
-      position: relative;
-      perspective: 800px;
-      margin: 0.5rem 0.1rem;
-      width: 45%; }
-      .demo-me .demo-box .demo-dic .demo-bl {
-        width: 100%;
-        height: 2.22rem; }
-        .demo-me .demo-box .demo-dic .demo-bl img {
-          width: 100%;
-          height: 2.22rem;
-          border-radius: 0.1rem; }
-      .demo-me .demo-box .demo-dic .demo-no {
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: rotateY(90deg);
-        transition: 0.5s;
-        width: 100%;
-        height: 2.22rem;
-        background: rgba(0, 0, 0, 0.8);
-        text-align: center;
-        color: #fff; }
-  .demo-me .demo-dic:hover .demo-no {
-    transform: rotateX(0deg);
-    border: 0.02rem solid #fff;
-    line-height: 2.22rem;
-    font-size: 0.3rem;
-    text-align: center;
-    border-radius: 0.1rem; }
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003199}}
+.demo-me .demo-box {
+  overflow: hidden;
+  margin: auto 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003202}}
+.demo-me .demo-box .demo-dic {
+  float: left;
+  position: relative;
+  perspective: 800px;
+  margin: 0.5rem 0.1rem;
+  width: 45%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003208}}
+.demo-me .demo-box .demo-dic .demo-bl {
+  width: 100%;
+  height: 2.22rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003211}}
+.demo-me .demo-box .demo-dic .demo-bl img {
+  width: 100%;
+  height: 2.22rem;
+  border-radius: 0.1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003215}}
+.demo-me .demo-box .demo-dic .demo-no {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotateY(90deg);
+  transition: 0.5s;
+  width: 100%;
+  height: 2.22rem;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003227}}
+.demo-me .st-demo {
+  margin: 0.2rem 0 0 0;
+  text-align: center;
+  font: 0.18rem/0.36rem " MicrosoftYaHei";
+  border-top: 1px dashed yellow;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003233}}
+.demo-me .demo-dic:hover .demo-no {
+  transform: rotateX(0deg);
+  border: 0.02rem solid #fff;
+  line-height: 2.22rem;
+  font-size: 0.3rem;
+  text-align: center;
+  border-radius: 0.1rem;
+}
 
 /* contact */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003241}}
 .contact-me {
   overflow: hidden;
-  background: url("../image/in-app_06.jpg") no-repeat center center; }
-  .contact-me .con-form {
-    font: 0.3rem/0.4rem "MicsoftYaHei"; }
-    .contact-me .con-form .con-area {
-      box-sizing: border-box;
-      padding: 0.06rem 0.12rem;
-      width: 100%;
-      outline: none;
-      border: 0.01rem dashed #e3e197;
-      border-radius: 0.05rem;
-      overflow: auto;
-      font: 0.3rem/0.4rem "MicsoftYaHei"; }
-    .contact-me .con-form .con-par {
-      padding: 0.1rem 0; }
-      .contact-me .con-form .con-par .con-btn {
-        padding: 0.1rem 0.4rem;
-        border: none;
-        border-radius: 0.02rem;
-        font-size: 0.26rem;
-        background: rgba(202, 10, 10, 0.93);
-        color: #fff; }
-      .contact-me .con-form .con-par .con-btn:hover {
-        background: rgba(234, 28, 28, 0.77); }
-  .contact-me .con-nt {
-    font: bold 0.3rem/0.4rem "MicsoftYaHei"; }
-  .contact-me hr {
-    border: 0.01rem dashed #ccc; }
-  .contact-me .new-list {
-    padding: 0.1rem 0; }
-    .contact-me .new-list .new-li {
-      margin: 0.1rem 0;
-      padding: 0.04rem 0.08rem 0.04rem 0;
-      border: 0.04rem solid #e3e197;
-      border-radius: 0.02rem; }
-      .contact-me .new-list .new-li .use-cont {
-        padding: 0.06rem 0.04rem 0 0.1rem;
-        width: 70%;
-        word-break: break-all;
-        font: 0.28rem/0.4rem "MicsoftYaHei"; }
-      .contact-me .new-list .new-li .new-right {
-        text-align: right;
-        color: #111; }
+  background: url("../image/in-app_06.jpg") no-repeat center center;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003245}}
+.contact-me .con-form {
+  font: 0.3rem/0.4rem "MicsoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003247}}
+.contact-me .con-form .con-area {
+  box-sizing: border-box;
+  padding: 0.06rem 0.12rem;
+  width: 100%;
+  outline: none;
+  border: 0.01rem dashed #e3e197;
+  border-radius: 0.05rem;
+  overflow: auto;
+  font: 0.3rem/0.4rem "MicsoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003256}}
+.contact-me .con-form .con-par {
+  padding: 0.1rem 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003258}}
+.contact-me .con-form .con-par .con-btn {
+  padding: 0.1rem 0.4rem;
+  border: none;
+  border-radius: 0.02rem;
+  font-size: 0.26rem;
+  background: rgba(202, 10, 10, 0.93);
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003265}}
+.contact-me .con-form .con-par .con-btn:hover {
+  background: rgba(234, 28, 28, 0.77);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003267}}
+.contact-me .con-nt {
+  font: bold 0.3rem/0.4rem "MicsoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003269}}
+.contact-me hr {
+  border: 0.01rem dashed #ccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003272}}
+.contact-me .new-list {
+  padding: 0.1rem 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003274}}
+.contact-me .new-list .new-li {
+  margin: 0.1rem 0;
+  padding: 0.04rem 0.08rem 0.04rem 0;
+  border: 0.04rem solid #e3e197;
+  border-radius: 0.02rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003279}}
+.contact-me .new-list .new-li .use-cont {
+  padding: 0.06rem 0.04rem 0 0.1rem;
+  width: 70%;
+  word-break: break-all;
+  font: 0.28rem/0.4rem "MicsoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003284}}
+.contact-me .new-list .new-li .new-right {
+  text-align: right;
+  color: #111;
+}
 
 /* footer */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003289}}
 .in-footer {
+  padding: 0 10%;
   background: url("../image/in-app_07.jpg") no-repeat center center;
-  padding: 0.2rem;
   text-align: center;
-  font: 0.3rem/0.4rem "MicsoftYaHei"; }
+  font: 0.16rem/0.36rempx "MicsoftYaHei";
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003295}}
+.in-footer .fter-dec {
+  font: bold 0.22rem/0.4rem "MicsoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003297}}
+.in-footer .fter-sp {
+  text-shadow: 5px 5px 2px #656565;
+  font: 0.18rem/0.6rem "HoangYen11";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003300}}
+.in-footer .fter-sp span:nth-child(1) {
+  color: red;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003302}}
+.in-footer .fter-sp span:nth-child(2) {
+  color: green;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003304}}
+.in-footer .fter-sp span:nth-child(3) {
+  color: blue;
+}
 
 /* alert */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003308}}
 .con-alert {
   display: none;
   position: fixed;
@@ -296,14 +461,27 @@ html {
   height: 2rem;
   text-align: center;
   border: 0.02rem solid #000;
-  background: #fff; }
-  .con-alert .al-title {
-    font: bold 0.2rem/0.4rem "MicsoftYaHei";
-    background: #000;
-    color: #fff; }
-  .con-alert .al-dec1 {
-    font: bold 0.18rem/0.9rem "MicsoftYaHei"; }
-  .con-alert .al-dec2 {
-    font: bold 0.16rem/0.26rem "MicsoftYaHei"; }
+  background: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003320}}
+.con-alert .al-title {
+  font: bold 0.2rem/0.4rem "MicsoftYaHei";
+  background: #000;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003324}}
+.con-alert .al-dec1 {
+  font: bold 0.18rem/0.9rem "MicsoftYaHei";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003326}}
+.con-alert .al-dec2 {
+  font: bold 0.16rem/0.26rem "MicsoftYaHei";
+}
+
+/* .right-side */
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/wxfeiang\/wxfeiang\.github\.io\/index\/css\/index-app\.sass}line{font-family:\00003329}}
+.right-side {
+  display: none;
+}
 
 /*# sourceMappingURL=index-app.css.map */
