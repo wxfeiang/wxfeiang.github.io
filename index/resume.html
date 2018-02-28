@@ -5,7 +5,7 @@
 	<title>resume</title>
 	<link  href="../public/image/wp.ico" rel="icon"/>
 	<link rel="stylesheet" href="../public/css/reset.css">
-	<link rel="stylesheet" href="css/resume.css">
+	<link rel="stylesheet" href="css/resume.min.css">
 </head>
 <body>
 	<div class="me-layout">
@@ -29,7 +29,7 @@
 			2、熟PS、Sublime、webstorm等编码工具进行前端页面开发，对css预处理器Sass有一定的认知。<br>
 			3、熟练运用Bootstrap、jQuery、jQuery Mobile等主流前端框架。<br>
 			4、可以使用js原生态代码编写网页业务逻辑，能使用HTML5编写移动端自适应的网页。<br>
-			5、了解MySQL数据库，能编写简单SQL语句，掌握一定的后台方面技术，如PHP代码，以增删改查为主，实现简单的功能。<br>
+			5、了解MySQL数据库，能编写简单SQL语句，掌握一定的后台方面技术，如PHP代码，以增删改查为主，实现简单数据处理的功能。<br>
 			6、能够手写 DIV+CSS 制作出符合网页标准化的静态网页原型HTML，兼容IE8/IE9/火狐/Chrome等主流浏览器并能迅速定位和解决技术问题。<br>
 			7、阅读和分析过部分框架源码（jQuery、Bootstrap）。<br>
 	</p>
@@ -37,44 +37,47 @@
     <hr>
     <ul class="me-skill">
 	     <li> 
-	     	<span> 2016/8-2017/10</span> 
-	     	<span>北京悟言科技有限公司 </span> 
+	     	<span> 2017/3-2017/12</span> 
+	     	<span>北京朵美科技有限公司 </span> 
 	     	<span>WEB前端开发</span>
 			<p>主要职责： 根据产品设计需求，进行前端页面开发，利用原生JS，JQuery框架实现页面中的交互效果，与后端进行交互对后端给的接口进行按需处理，配合后端工程师完成项目开发。</p> 
 		</li>
 		<li> 
-		    <span> 2016/8-2017/10</span> 
+		    <span> 2015/10-2017/01</span> 
 	     	<span>甘肃智控科技有限公司 </span> 
-	     	<span>WEB前端开发</span>
+	     	<span>网络安防与维护</span>
 			<p>主要职责：负责解决网络连接中的异常问题，进行相关故障分析、处理及总结，收集客户反馈的信息并及时处理。</p> 
 		</li>    
 	</ul>
     <h3 class="me-title">项目经历</h3>
     <hr>
-    项目名称：杨凌科夫化学技术有限公司官网开发 （2016.10-2017-04)<br>
+    项目名称：APP购物商城 （2017.05-2017-08)<br>
 	开发环境：Webstorm +Chrome<br>
 	开发技术: HTML + CSS/CSS3+Bootstrap+JQuery+Javascript+Ajax<br>
 	项目描述：这个网站是一个信息展示展示型网站，主要负责实现官网页面、页面切换、合作案例页面、联系页面。以及详情页的渲染等业务的要求。<br>
-	（http://kfchemtech.com/）；<br>
 	项目技术：运用HTML/CSS及语义化进行简单布局，运用CSS3和jQuery进行渲染，
 	         运用web的布局在移动设备上自适应，使用HTML5和CSS3的属性布局页面特效，
 	         注册登录页面主要使用到的是正则表达式判断数据格式及Ajax的异步请求数据。
 
 </div>
  <div class="me-side" id="me-side">
-     <button>打印</button>
-	 <button>下载</button>
-	 <button><a href="../index.html">返回首页</a></button>
+     <a href="javaScript:;">打印</a>
+	 <a href="WEB前端工程师  王鹏  18309469751.pdf" download="WEB前端工程师  王鹏  18309469751" >下载</a>
+	 <a href="../index.html">首页</a>
  </div>
 
 
 <script>
   var printl = document.getElementsByClassName("me-side")[0];
-  console.log("printl");
-  var btn = printl.getElementsByTagName("button");
+  var btn = printl.getElementsByTagName("a");
   var onOff = true;
   btn[0].onclick = function(){
-   print();
+  	printl.style.display = 'none';
+    print();
+    setTimeout(function(){
+     printl.style.display = 'block';
+    },20);
+
 }
 </script>
 

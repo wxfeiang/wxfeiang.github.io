@@ -1,7 +1,7 @@
 /*查看提示*/
 console.log('Hi! 朋友，感谢您愿意调试简历代码。如果您有什么看法请指点我...');
 
-/*nav*/
+/*nav 滚动事件*/
 window.onscroll = function(){
 	var topScroll = document.documentElement.scrollTop||document.body.scrollTop;//滚动的距离,距离顶部的距离
 	var innavTop = getId("innav").offsetTop;
@@ -17,7 +17,7 @@ window.onscroll = function(){
 	innav.style.position = 'static';
 	 }
     // 画圆
-   if(flarr[2].offsetTop<topScroll<flarr[3].offsetTop){
+   if(flarr[2].offsetTop<topScroll<flarr[2].offsetHeight){
    	  yuan();
    }
    //  返回顶部按钮 出现
@@ -36,6 +36,7 @@ window.onscroll = function(){
 /*music*/
 var myMusic = getId("me-music");
 var mypic = getId("im-pic");
+var onOff = true;
 mypic.onclick = function(){
 
   if(onOff){
@@ -92,7 +93,7 @@ mypic.onclick = function(){
  /* app 下点击效果*/
 var navbtn = getId("navbtn");
 var navlist = getId("navlist");
-var onOff = true;
+
 navbtn.onclick = function() {
 	if(onOff){
 	   navlist.style.display = 'block';
